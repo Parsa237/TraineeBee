@@ -1,0 +1,6 @@
+Planning:
+
+Dinsdag:
+	- Crashcourse PHP and Laravel
+	- Show planning at the end of the morning
+	- 
