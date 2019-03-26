@@ -12,6 +12,3 @@
 */
 
 Route::get('/', 'PagesController@index');
-Route::get('/about', 'PagesController@about');
-Route::get('/dashboard', 'PagesController@dashboard');
-Route::get('/information', 'PagesController@CandCInfo');
