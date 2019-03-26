@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
-        <link href="../public/css/welcomeStyle.css" rel="stylesheet" type="text/css"/>
+        <link href="{{ URL::asset('css/welcomeStyle.css') }}" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
