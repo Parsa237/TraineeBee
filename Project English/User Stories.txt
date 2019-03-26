@@ -1,0 +1,21 @@
+User stories Project (MOSCOW)
+
+M. As a company I want to be able to register so that I can look for students
+M. As a student I want to be able to search for companies so that I can apply for a internship
+M. As a company I want to be able to create a profile to attract the student
+M. As a student I want to be able to refine my searches so that I can find a companny that suits me
+S. As a student I want to be able to register so that I can look for companies
+C. As a teacher I want to be able to register so that I can guide students
+S. As a student I want to make a profile to be able to portray myself in the best way possible
+C. As a student I want to be able to upload my knowledge and qualifications so that companies can see my skills
+M. As a owner of the website I want companies to be persuaded to create an account so that students have something to choose
+M. As an admin I want to be able to do maintenance on the website to fix issues
+C. As a user I want to be able to report any bugs so that admins can fix the issue
+C. As a school/college I want to be able to create a profile so that I can advertise the students qaulities
+C. As a researcher I want to get data for national statistics
+S. As a admin I want to be able to remove students and companies so that the user data remains clean
+M. As a student/company/teacher I want to be able to find out more about the project so that I can see if I am interested
+M. As a company I want to be able to place my vacancies for internships on the website so that students can find me
+M. As a student I want to be able to contact the internships so that I have more information about them/have meeting with them
+C. As a student/company I want to be able to make a status to show that I am available
+S. As a company I want to share the website for advertising. 
