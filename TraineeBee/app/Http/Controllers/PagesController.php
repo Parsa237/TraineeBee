@@ -16,6 +16,18 @@ class PagesController extends Controller
         return view('Pages.index');
     }
 
+    public function about(){
+        return view('Pages.about');
+    }
+
+    public function dashboard(){
+        return view('Pages.dashboard');
+    }
+
+    public function CandCInfo(){
+        return view('Pages.candcinfo');
+    }
+
     /**
      * Show the form for creating a new resource.
      *
