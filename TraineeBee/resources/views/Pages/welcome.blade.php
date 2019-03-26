@@ -28,7 +28,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    TraineeBee
                 </div>
 
                 <div class="links">
