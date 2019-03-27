@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+//Page controller handles get requests from web.php(routes/app.php)
 class PagesController extends Controller
 {
     /**
