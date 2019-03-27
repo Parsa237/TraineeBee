@@ -11,4 +11,9 @@
 |
 */
 
+//Get request for PagesController.php(app/http/controllers/PagesController.php)
+//this will handle all the requests for customers looking for pages.
 Route::get('/', 'PagesController@index');
+Route::get('/about', 'PagesController@about');
+Route::get('/dashboard', 'PagesController@dashboard');
+Route::get('/info', 'PagesController@CandCInfo');

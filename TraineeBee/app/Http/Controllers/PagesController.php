@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+//Page controller handles get requests from web.php(routes/app.php)
 class PagesController extends Controller
 {
     /**
@@ -14,6 +15,18 @@ class PagesController extends Controller
     public function index()
     {
         return view('Pages.index');
+    }
+
+    public function about(){
+        return view('Pages.about');
+    }
+
+    public function dashboard(){
+        return view('Pages.dashboard');
+    }
+
+    public function CandCInfo(){
+        return view('Pages.candcinfo');
     }
 
     /**
