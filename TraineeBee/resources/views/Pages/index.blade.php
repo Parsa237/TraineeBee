@@ -1,8 +1,8 @@
 <!-- extending the standard layout -->
 @extends('Layouts.layout')
 @section('content')
-    <div class="container-fluid nav pl-4 pr-4 pt-5">
-        <div class="row navRow">
+    <div class="container-fluid nav pr-0 pt-5">
+        <div class="row navRow justify-content-center pl-4 pr-4">
             <div class="col-2">
                 <a class="firstPartNav" href="/">Home</a>
             </div>
