@@ -1,35 +1,40 @@
 
-.background{
+.background {
     background-image: linear-gradient(to right, #ffd154, #e3a000);
     width: 100%;
     height: 150vh;
     font-family: 'Lilita One', cursive;
     color: white;
 }
-.nav{
+
+.nav {
     font-size: 2em;
     width: 100%;
 }
-.navRow{
+
+.navRow {
     width: 100%;
 }
-.firstPartNav{
+
+.firstPartNav {
     float: left;
     color: white;
 }
 
-.secondPartNav{
+.secondPartNav {
     float: right;
     color: white;
 }
-.firstPartNav:hover{
+
+.firstPartNav:hover {
     color: white;
 }
 
-.secondPartNav:hover{
+.secondPartNav:hover {
     color: white;
 }
-#logo{
+
+#logo {
     display: block;
     position: relative;
     top: -5vw;
@@ -38,7 +43,11 @@
     align-content: center;
     width: 35vw;
 }
-#stingButtonImg{
+@keyframes stingRotate {
+    0% {position: fixed;left: 47vw;}
+    100% {position: fixed;left: 85vw; transform: rotate(180deg); width: 3vw;}
+}
+#stingButtonImg {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -47,6 +56,6 @@
     position: fixed;
     left: 47vw;
     bottom: 2vw;
-}
-#stingButton{
+    animation-name: stingRotate;
+    animation-duration: 2s;
 }
