@@ -17,5 +17,5 @@ Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
 Route::get('/dashboard', 'PagesController@dashboard');
 Route::get('/info', 'PagesController@CandCInfo');
-Route::get('/login', 'PagesController@Login');
+Route::get('/login', 'PagesController@login');
 Route::get('/contact', 'PagesController@contact');

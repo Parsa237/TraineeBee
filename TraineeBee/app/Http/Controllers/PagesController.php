@@ -29,6 +29,10 @@ class PagesController extends Controller
         return view('Pages.candcinfo');
     }
 
+    public function login(){
+        return view('Pages.login');
+    }
+
     public function contact(){
         return view('Pages.contact');
     }
