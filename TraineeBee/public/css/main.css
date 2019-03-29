@@ -2,18 +2,39 @@
     background-image: linear-gradient(to right, #ffd154, #e3a000);
     width: 100vw;
     height: 100vh;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Lilita One', cursive;
     color: white;
 }
-#firstPartNav{
+.nav{
+    font-size: 2em;
+    width: 100vw;
+}
+.navRow{
+    width: 100vw;
+}
+.firstPartNav{
     float: left;
+    color: white;
+}
+
+.secondPartNav{
+    float: right;
+    color: white;
+}
+.firstPartNav:hover{
+    color: white;
+}
+
+.secondPartNav:hover{
     color: white;
 }
 #logo{
     display: block;
-
+    position: relative;
+    top: -5vw;
     margin-left: auto;
     margin-right: auto;
+
     align-content: center;
     width: 35vw;
 }
