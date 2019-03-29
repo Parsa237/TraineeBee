@@ -1,3 +1,4 @@
+<!-- extending the standard layout -->
 @extends('Layouts.layout')
 @section('nav')
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
