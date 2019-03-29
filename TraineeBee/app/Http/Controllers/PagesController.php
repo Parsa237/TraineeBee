@@ -37,6 +37,10 @@ class PagesController extends Controller
         return view('Pages.contact');
     }
 
+    public function profile(){
+        return view('Pages.profile');
+    }
+
     /**
      * Show the form for creating a new resource.
      *
