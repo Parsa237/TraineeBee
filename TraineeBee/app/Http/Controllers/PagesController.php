@@ -22,7 +22,20 @@ class PagesController extends Controller
     }
 
     public function dashboard(){
-        return view('Pages.dashboard');
+        return view('Pages.dashboard')->with([[
+				'image' => 'x',
+				'name' => 'name',
+				'description' => 'description'
+			], [
+				'image' => 'x2',
+				'name' => 'name2',
+				'description' => 'description2'
+			], [
+				'image' => 'x3',
+				'name' => 'name3',
+				'description' => 'description3'
+			]
+		]);;
     }
 
     public function CandCInfo(){
