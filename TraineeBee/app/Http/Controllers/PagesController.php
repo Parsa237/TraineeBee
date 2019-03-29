@@ -29,6 +29,10 @@ class PagesController extends Controller
         return view('Pages.candcinfo');
     }
 
+    public function contact(){
+        return view('Pages.contact');
+    }
+
     /**
      * Show the form for creating a new resource.
      *
