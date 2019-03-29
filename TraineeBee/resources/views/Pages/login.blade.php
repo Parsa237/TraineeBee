@@ -24,4 +24,22 @@
     <h1>This is the index page</h1>
     <p>This is the index page for our project called TraineeBee</p>
 
+    <h1>Sign in:</h1>
+
+    <input type="text" placeholder="Email adres" id="email-adres" class="login">
+    <input type="text" placeholder="Password" id="password" class="login">
+
+    <h2>Register:</h1>
+
+    <input type="text" placeholder="Email adress" id="email-adres2" class="register">
+    <input type="text" placeholder="First name" id="first-name" class="register">
+    <input type="text" placeholder="Middle name" id="middle-name" class="register">
+    <input type="text" placeholder="Last name" id="last-name" class="register">
+    <input type="text" placeholder="Password" id="password2" class="register">
+    <input type="text" placeholder="Please repeat password" id="repeatpassword" class="register">
+
+
+
+    
+
 @endsection
