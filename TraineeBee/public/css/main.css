@@ -35,7 +35,19 @@
     top: -5vw;
     margin-left: auto;
     margin-right: auto;
-
     align-content: center;
     width: 35vw;
+}
+#stingButtonImg{
+    display: block;
+    position: relative;
+    top: 12vw;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    width: 6vw;
+}
+#stingButton{
+    position: absolute;
+    height: 100vh;
 }
