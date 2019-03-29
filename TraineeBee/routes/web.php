@@ -20,3 +20,6 @@ Route::get('/info', 'PagesController@CandCInfo');
 Route::get('/login', 'PagesController@login');
 Route::get('/contact', 'PagesController@contact');
 Route::get('/profile', 'PagesController@profile');
+Auth::routes();
+
+Route::get('/dashboard', 'HomeController@dashboard')->name('home');
