@@ -48,14 +48,12 @@
     100% {position: fixed;left: 85vw; transform: rotate(180deg); width: 3vw;}
 }
 #stingButtonImg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    align-content: center;
     width: 6vw;
     position: fixed;
     left: 47vw;
     bottom: 2vw;
-    animation-name: stingRotate;
-    animation-duration: 2s;
+}
+
+.animate{
+    animation: stingRotate 1s;
 }
