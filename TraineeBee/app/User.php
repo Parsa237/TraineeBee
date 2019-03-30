@@ -26,10 +26,4 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
-
-    protected $attributes = [
-        'status' => 0,
-        'isAdmin' => false
-    ];
-
 }

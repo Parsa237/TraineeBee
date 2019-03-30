@@ -54,10 +54,6 @@ class PagesController extends Controller
         return view('Pages.profile');
     }
 
-    public function adminpanel(){
-        return view('Pages.adminpanel');
-    }
-
     /**
      * Show the form for creating a new resource.
      *

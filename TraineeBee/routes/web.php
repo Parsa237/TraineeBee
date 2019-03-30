@@ -20,10 +20,6 @@ Route::get('/info', 'PagesController@CandCInfo');
 Route::get('/login', 'PagesController@login');
 Route::get('/contact', 'PagesController@contact');
 Route::get('/profile', 'PagesController@profile');
-Route::get('/admin', 'PagesController@adminpanel');
 Auth::routes();
 
-Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
-
-Route::resource('dashboard', 'PostsController');
-Route::get('/home', function(){return view('home');});
+Route::get('/dashboard', 'HomeController@dashboard')->name('home');
