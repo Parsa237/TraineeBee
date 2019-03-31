@@ -1,4 +1,4 @@
-<html>
+<html lang="{{config('app.locale')}}">
 
     <head>
         <title>{{config('app.name', 'TraineeBee')}}</title>
@@ -68,6 +68,7 @@
 
             <img id="logo" src="{{asset('images/logo.png')}}" alt="logo">
             <div class="container">
+                @include('Inc.messages')
                 @yield('content')
             </div>
 
