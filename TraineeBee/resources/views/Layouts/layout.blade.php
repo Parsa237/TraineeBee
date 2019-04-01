@@ -18,11 +18,11 @@
                     <a class="firstPartNav" href="./">Home</a>
                 </div>
                 <div class="col-2">
-                    <a class="firstPartNav" href="./about">About</a>
+                    <a class="firstPartNav" href="#about">About</a>
                 </div>
                 <div class="col-4"></div>
                 <div class="col-2">
-                    <a class="secondPartNav" href="./info">Information</a>
+                    <a class="secondPartNav" href="#info">Information</a>
                 </div>
                 <div class="col-2">
                     <a class="secondPartNav" href="./login">Login/register</a>
