@@ -27,10 +27,12 @@
     text-align: right;
     color: white;
 }
+
 .secondPartNavDashboard {
     float: left;
     color: white;
 }
+
 .secondPartNavDashboard:hover {
     color: white;
 }
@@ -55,6 +57,7 @@
     animation-duration: 1s;
     animation-name: logo;
 }
+
 #logoDashboard {
     display: block;
     position: fixed;
@@ -65,14 +68,44 @@
     align-content: center;
     width: 20vw;
 }
+
 @keyframes stingRotate {
-    0% {position: fixed;left: 47vw;}
-    100% {position: fixed;left: 85vw; transform: rotate(180deg); width: 3vw;}
+    0% {
+        position: fixed;
+        left: 47vw;
+    }
+    100% {
+        position: fixed;
+        left: 85vw;
+        transform: rotate(180deg);
+        width: 3vw;
+    }
 }
+
+@keyframes stingRotateBack {
+    0% {
+        position: fixed;
+        left: 85vw;
+        transform: rotate(180deg);
+        width: 3vw;
+    }
+    100% {
+        position: fixed;
+        left: 47vw;
+    }
+}
+
 @keyframes logo {
-    0% {width: 30vw; left: 35vw;}
-    100% { left: 40vw;  width: 20vw;}
+    0% {
+        width: 30vw;
+        left: 35vw;
+    }
+    100% {
+        left: 40vw;
+        width: 20vw;
+    }
 }
+
 #stingButtonImg {
     display: block;
     margin-left: auto;
@@ -82,13 +115,24 @@
     position: fixed;
     left: 47vw;
     bottom: 2vw;
-    animation-name: stingRotate;
-    animation-duration: 2s;
 }
-.textUserName{
+
+.stingAnimation {
+    animation-name: stingRotate;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.stingAnimationBack {
+    animation-name: stingRotateBack;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.textUserName {
     font-size: 1.6vw;
     color: white;
 }
-.textUserName:hover{
+
+.textUserName:hover {
     color: lightgray;
 }
