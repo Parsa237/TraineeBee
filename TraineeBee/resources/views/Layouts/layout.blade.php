@@ -73,7 +73,11 @@
     <div class="container">
         @yield('content')
     </div>
-
+    <div class="container">
+        <footer>
+            <p>this is a footer</p>
+        </footer>
+    </div>
 </div>
 
 
@@ -87,14 +91,14 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 <script>
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         if ($(this).scrollTop() > 10) { // this refers to window
             $("#stingButtonImg").addClass("stingAnimation");
             $("#stingButtonImg").removeClass("stingAnimationBack");
-            $("#stingButtonImg").onclick (function () {
+            $("#stingButtonImg").onclick(function () {
                 $(this).scrollTop(0);
             })
-            }else{
+        } else {
             $("#stingButtonImg").addClass("stingAnimationBack");
             $("#stingButtonImg").removeClass("stingAnimation");
         }
