@@ -1,5 +1,6 @@
 .background {
-    background-color: white;
+    /*background-image: linear-gradient(to right, #ffd154, #e3a000);*/
+    background-color: #f5f8fa;
     width: 100%;
     height: 150vh;
     font-family: 'Lilita One', cursive;
@@ -30,7 +31,8 @@
 
 .secondPartNavDashboard {
     float: left;
-    color: white;
+    color: #323232;
+    font-size: 25px;
 }
 
 .secondPartNavDashboard:hover {
@@ -116,7 +118,6 @@
     left: 48.5vw;
     bottom: 2vw;
 }
-
 
 .stingAnimation {
     animation-name: stingRotate;
