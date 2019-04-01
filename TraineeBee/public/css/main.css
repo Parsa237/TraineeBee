@@ -71,14 +71,7 @@
 .DescHeaderDash{
     font-size: 20px;
     font-family:"Arial Black", Gadget, sans-serif;
-}
-.DescImgBord{
-   div
-  width: 300px;
-  border: 25px solid green;
-  padding: 25px;
-  margin: 25px;
-}       
+} 
 
 .grid-container {
     display:grid;
