@@ -6,7 +6,7 @@
 
     <div class="container ">
         <div class="row m-y-2">
-            <div class="col-lg-4 pull-lg-8 text-xs-center">
+            <div class="col-lg-12 pull-lg-12 text-xs-center">
                 <img src="//placehold.it/150" class="m-x-auto img-fluid img-circle" alt="avatar">
                 <h6 class="m-t-2">Upload a different photo</h6>
                 <label class="custom-file">
@@ -14,7 +14,6 @@
                 </label>
             </div>
         </div>
-
 
 
 
