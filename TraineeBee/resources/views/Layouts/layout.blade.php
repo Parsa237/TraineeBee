@@ -98,16 +98,25 @@
         if ($(this).scrollTop() > 10) { // this refers to window
             $("#stingButtonImg").addClass("stingAnimation");
             $("#stingButtonImg").removeClass("stingAnimationBack");
-
+            $("#stingButtonImg").click(function () {
+                window.scrollTo(0, 0);
+            });
         } else {
             $("#stingButtonImg").addClass("stingAnimationBack");
             $("#stingButtonImg").removeClass("stingAnimation");
+            $("#stingButtonImg").click(function () {
+                window.scrollTo(0, 4500);
+            });
         }
     });
-    $(window).scroll(function () {
-        $("#stingButtonImg").click(function () {
-            window.scrollTo(0, 0);
-        });
+    $(window).ready(function () {
+        $i = 0;
+        if ($i < 1) {
+            $("#stingButtonImg").click(function () {
+                window.scrollTo(0, 4500);
+            });
+            $i++;
+        }
     });
 </script>
 </body>
