@@ -1,6 +1,0 @@
- #input-submit {
-     color: white; 
-     background: $red;
-     cursor: pointer;
-	 &:hover {
-       @include box-shadow(0 1px 1px 1px rgba(#aaa, 0.6)); 

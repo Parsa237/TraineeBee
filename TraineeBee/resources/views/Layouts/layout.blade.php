@@ -29,7 +29,7 @@
                 </div>
             </div>
         </div>
-        <img id="logo" src="{{asset('images/logo.png')}}" alt="logo">
+        <img id="logo" src="{{asset('images/banner_logo.png')}}" alt="logo">
     @else
         <div class="container-fluid nav pr-0 pt-5">
             <div class="row navRow justify-content-center pl-4 pr-4">
@@ -42,7 +42,7 @@
                 <div class="col-4">
                 </div>
                 <div class="col-2">
-                    <a class="secondPartNavDashboard" href="/profile">profile</a>
+                    <a class="secondPartNavDashboard" href="./profile">profile</a>
                 </div>
                 <div class="col-2">
                     <li class="secondPartNavDashboard dropdown">
@@ -67,7 +67,9 @@
                 </div>
             </div>
         </div>
-        <img id="logoDashboard" src="{{asset('images/logo.png')}}" alt="logo">
+    <div class="hexagon">
+        <img id="logoDashboard" src="{{asset('images/banner_logo.png')}}" alt="logo">
+    </div>
     @endguest
 
 
@@ -96,15 +98,17 @@
         if ($(this).scrollTop() > 10) { // this refers to window
             $("#stingButtonImg").addClass("stingAnimation");
             $("#stingButtonImg").removeClass("stingAnimationBack");
-            $("#stingButtonImg").onclick(function () {
-                $(this).scrollTop(0);
-            })
+
         } else {
             $("#stingButtonImg").addClass("stingAnimationBack");
             $("#stingButtonImg").removeClass("stingAnimation");
         }
     });
-
+    $(window).scroll(function () {
+        $("#stingButtonImg").click(function () {
+            window.scrollTo(0, 0);
+        });
+    });
 </script>
 </body>
 </html>

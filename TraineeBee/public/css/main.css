@@ -1,11 +1,10 @@
-
 .background {
     /*background-image: linear-gradient(to right, #ffd154, #e3a000);*/
-    background-color: #ffc107;
+    background-color: #f5f8fa;
     width: 100%;
     height: 150vh;
     font-family: 'Lilita One', cursive;
-    color: white;
+    color: #323232;
 }
 
 .nav {
@@ -20,17 +19,20 @@
 
 .firstPartNav {
     float: left;
-    color: white;
+    color: #323232;
+    font-size: 25px;
 }
 
 .secondPartNav {
     text-align: right;
-    color: white;
+    color: #323232;
+    font-size: 25px;
 }
 
 .secondPartNavDashboard {
     float: left;
-    color: white;
+    color: #323232;
+    font-size: 25px;
 }
 
 .secondPartNavDashboard:hover {
@@ -111,9 +113,9 @@
     margin-left: auto;
     margin-right: auto;
     align-content: center;
-    width: 6vw;
+    width: 3vw;
     position: fixed;
-    left: 47vw;
+    left: 48.5vw;
     bottom: 2vw;
 }
 
