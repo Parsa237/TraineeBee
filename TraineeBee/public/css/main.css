@@ -11,8 +11,9 @@
 
 @keyframes stingRotate {
     0% {
+        width: 5vw;
         position: fixed;
-        left: 48.5vw;
+        left: 47.5vw;
     }
     100% {
         position: fixed;
@@ -30,8 +31,9 @@
         width: 3vw;
     }
     100% {
+        width: 5vw;
         position: fixed;
-        left: 48.5vw;
+        left: 47.5vw;
     }
 }
 
@@ -40,9 +42,9 @@
     margin-left: auto;
     margin-right: auto;
     align-content: center;
-    width: 3vw;
+    width: 5vw;
     position: fixed;
-    left: 48.5vw;
+    left: 47.5vw;
     bottom: 2vw;
 }
 
