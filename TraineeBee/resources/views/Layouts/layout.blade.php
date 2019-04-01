@@ -30,6 +30,7 @@
                 </div>
             </div>
         </div>
+        <img id="logo" src="{{asset('images/logo.png')}}" alt="logo">
     @else
         <div class="container-fluid nav pr-0 pt-5">
             <div class="row navRow justify-content-center pl-4 pr-4">
@@ -42,31 +43,34 @@
                 <div class="col-4">
                 </div>
                 <div class="col-2">
-                    <a class="secondPartNav" href="/profile">profile</a>
+                    <a class="secondPartNavDashboard" href="/profile">profile</a>
                 </div>
-                <li class="nav-item dropdown">
-                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                        {{ Auth::user()->name }} <span class="caret"></span>
-                    </a>
-
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{ route('logout') }}"
-                           onclick="event.preventDefault();
-                                                             document.getElementById('logout-form').submit();">
-                            {{ __('Logout') }}
+                <div class="col-2">
+                    <li class="secondPartNavDashboard dropdown">
+                        <a id="navbarDropdown" class="nav-link textUserName dropdown-toggle" href="#" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
 
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            @csrf
-                        </form>
-                    </div>
-                </li>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{ route('logout') }}"
+                               onclick="event.preventDefault();
+                                                             document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
+                        </div>
+                    </li>
+                </div>
             </div>
         </div>
+        <img id="logoDashboard" src="{{asset('images/logo.png')}}" alt="logo">
     @endguest
 
-    <img id="logo" src="{{asset('images/logo.png')}}" alt="logo">
+
     <div class="container">
         @yield('content')
     </div>

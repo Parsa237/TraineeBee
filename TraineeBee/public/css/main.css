@@ -1,6 +1,7 @@
 
 .background {
-    background-image: linear-gradient(to right, #ffd154, #e3a000);
+    /*background-image: linear-gradient(to right, #ffd154, #e3a000);*/
+    background-color: #ffc107;
     width: 100%;
     height: 150vh;
     font-family: 'Lilita One', cursive;
@@ -14,6 +15,7 @@
 
 .navRow {
     width: 100%;
+    position: fixed;
 }
 
 .firstPartNav {
@@ -22,7 +24,14 @@
 }
 
 .secondPartNav {
-    float: right;
+    text-align: right;
+    color: white;
+}
+.secondPartNavDashboard {
+    float: left;
+    color: white;
+}
+.secondPartNavDashboard:hover {
     color: white;
 }
 
@@ -36,16 +45,33 @@
 
 #logo {
     display: block;
-    position: relative;
-    top: -5vw;
+    position: fixed;
+    top: 2vw;
+    left: 35vw;
     margin-left: auto;
     margin-right: auto;
     align-content: center;
-    width: 35vw;
+    width: 30vw;
+    animation-duration: 1s;
+    animation-name: logo;
+}
+#logoDashboard {
+    display: block;
+    position: fixed;
+    top: 2vw;
+    left: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    width: 20vw;
 }
 @keyframes stingRotate {
     0% {position: fixed;left: 47vw;}
     100% {position: fixed;left: 85vw; transform: rotate(180deg); width: 3vw;}
+}
+@keyframes logo {
+    0% {width: 30vw; left: 35vw;}
+    100% { left: 40vw;  width: 20vw;}
 }
 #stingButtonImg {
     display: block;
@@ -58,4 +84,11 @@
     bottom: 2vw;
     animation-name: stingRotate;
     animation-duration: 2s;
+}
+.textUserName{
+    font-size: 1.6vw;
+    color: white;
+}
+.textUserName:hover{
+    color: lightgray;
 }
