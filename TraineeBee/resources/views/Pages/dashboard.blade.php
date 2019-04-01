@@ -7,9 +7,17 @@
             @if(count($posts) > 0)
                 @foreach($posts as $post)
                     <div class="card card-body bg-light p-3">
-                        <h1><a href="/dashboard/{{$post->id}}">{{$post->title}}</a></h1>
+                        
+                        <font color='#222426' size='2pt'>
+                            <h1><a href="/dashboard/{{$post->id}}"  class="HeaderFontDash">{{$post->title}}</a></h1>
+                <h1>
+                    <p class="DescHeaderDash">Job Title: {{$post->title}}</p>
+                            </h1>
                         <p>{{$post->body}}</p>
-                        <small>Posted on {{$post->created_at}}</small>
+                <h1>
+                  <p class="DescHeaderDash">Job Description: {{$post->title}}</p>
+                        </h1>
+                            <small>Posted on {{$post->created_at}}</small>
                     </div>
                 @endforeach
             {{$posts->links()}}
