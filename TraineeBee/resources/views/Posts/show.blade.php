@@ -4,7 +4,7 @@
         <a href="/dashboard" class="btn btn-default">Go Back</a>
         <h1>{{$post->title}}</h1>
         <div>{{$post->body}}</div>
-        <small>Posted on {{$post->created_at}}</small>
+        <small>Posted on {{$post->created_at}} - Posted by {{$post->user->name}}</small>
         <hr>
 @if(Auth::user()->id == $post->id)
     <p>You need to login to edit this post.</p>

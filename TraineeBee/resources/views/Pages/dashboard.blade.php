@@ -15,7 +15,7 @@
                         <h1>
 {{--                            <p class="DashDesc">Job Description: {{$post->body}}</p>--}}
                         </h1>
-                        <small>Posted on {{$post->created_at}}</small>
+                        <small>Posted on {{$post->created_at}} - Posted by {{$post->user->name}}</small>
                     </div>
                 </div>
             @endforeach
