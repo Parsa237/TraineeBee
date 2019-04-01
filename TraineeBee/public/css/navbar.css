@@ -6,7 +6,7 @@
 .navRow {
     width: 100%;
     position: relative;
-    margin-bottom: 10vw;
+    margin-bottom: 12vw;
 }
 
 .firstPartNav {
@@ -28,15 +28,15 @@
 }
 
 .secondPartNavDashboard:hover {
-    color: white;
+    color: #FFC755;
 }
 
 .firstPartNav:hover {
-    color: white;
+    color: #FFC755;
 }
 
 .secondPartNav:hover {
-    color: white;
+    color: #FFC755;
 }
 
 #logo {
