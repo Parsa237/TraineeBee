@@ -12,21 +12,21 @@
 
 .firstPartNav {
     float: left;
-    color: white;
+    color: #323232;
 }
 
 .secondPartNav {
     text-align: right;
-    color: white;
+    color: #323232;
 }
 
 .secondPartNavDashboard {
     float: left;
-    color: white;
+    color: #323232;
 }
 
 .secondPartNavDashboard:hover {
-    color: white;
+    color: #323232;
 }
 
 .firstPartNav:hover {
