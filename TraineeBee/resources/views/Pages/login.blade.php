@@ -38,8 +38,4 @@
     <input type="text" placeholder="Password" id="password2" class="register">
     <input type="text" placeholder="Please repeat password" id="repeatpassword" class="register">
 
-
-
-    
-
 @endsection

@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Post;
 
-//Page controller handles get requests from web.php(routes/app.php)
-class PagesController extends Controller
+class PostsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,48 +15,8 @@ class PagesController extends Controller
      */
     public function index()
     {
-        return view('Pages.index');
-    }
-
-    public function about(){
-        return view('Pages.about');
-    }
-
-    public function dashboard(){
-        return view('Pages.dashboard')->with([[
-				'image' => 'x',
-				'name' => 'name',
-				'description' => 'description'
-			], [
-				'image' => 'x2',
-				'name' => 'name2',
-				'description' => 'description2'
-			], [
-				'image' => 'x3',
-				'name' => 'name3',
-				'description' => 'description3'
-			]
-		]);;
-    }
-
-    public function CandCInfo(){
-        return view('Pages.candcinfo');
-    }
-
-    public function login(){
-        return view('Pages.login');
-    }
-
-    public function contact(){
-        return view('Pages.contact');
-    }
-
-    public function profile(){
-        return view('Pages.profile');
-    }
-
-    public function adminpanel(){
-        return view('Pages.adminpanel');
+        $posts = Post::orderBy('created_at')->paginate(5);
+        return view('Pages.dashboard')->with('posts', $posts);
     }
 
     /**
@@ -65,7 +26,7 @@ class PagesController extends Controller
      */
     public function create()
     {
-        //
+        return view('posts.create');
     }
 
     /**
@@ -76,7 +37,16 @@ class PagesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'title' => 'required',
+            'body' => 'required'
+        ]);
+
+        $post = new Post;
+        $post->title = $request->input('title');
+        $post->body = $request->input('body');
+        $post->save();
+        return redirect('/dashboard')->with('success', 'Post created');
     }
 
     /**
@@ -87,7 +57,8 @@ class PagesController extends Controller
      */
     public function show($id)
     {
-        //
+        $post = Post::find($id);
+        return view('Posts.show')->with('post', $post);
     }
 
     /**
