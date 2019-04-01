@@ -1,11 +1,10 @@
-
 .background {
     /*background-image: linear-gradient(to right, #ffd154, #e3a000);*/
-    background-color: #ffc107;
+    background-color: #f5f8fa;
     width: 100%;
     height: 150vh;
     font-family: 'Lilita One', cursive;
-    color: white;
+    color: #323232;
 }
 
 .nav {
@@ -20,12 +19,14 @@
 
 .firstPartNav {
     float: left;
-    color: white;
+    color: #323232;
+    font-size: 25px;
 }
 
 .secondPartNav {
     text-align: right;
     color: #323232;
+    font-size: 25px;
 }
 
 .secondPartNavDashboard {
