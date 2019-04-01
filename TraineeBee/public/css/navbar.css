@@ -5,106 +5,58 @@
 
 .navRow {
     width: 100%;
-    position: fixed;
+    position: relative;
+    margin-bottom: 12vw;
 }
 
-
-
 .firstPartNav {
-    float: left;
+    float: right;
     color: #323232;
+    font-size: 25px;
 }
 
 .secondPartNav {
     text-align: right;
     color: #323232;
+    font-size: 25px;
 }
 
 .secondPartNavDashboard {
     float: left;
     color: #323232;
+    font-size: 25px;
 }
 
 .secondPartNavDashboard:hover {
-    color: #323232;
+    color: #FFC755;
 }
 
 .firstPartNav:hover {
-    color: white;
+    color: #FFC755;
 }
 
 .secondPartNav:hover {
-    color: white;
+    color: #FFC755;
 }
 
 #logo {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 0vw;
-    left: 35vw;
+    left: 37vw;
     margin-left: auto;
     margin-right: auto;
     align-content: center;
-    width: 30vw;
-    animation-duration: 1s;
-    animation-name: logo;
+    width: 26vw;
 }
 
 #logoDashboard {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 0vw;
     left: 40vw;
     margin-left: auto;
     margin-right: auto;
     align-content: center;
     width: 20vw;
-}
-
-@keyframes stingRotate {
-    0% {
-        position: fixed;
-        left: 47vw;
-    }
-    100% {
-        position: fixed;
-        left: 85vw;
-        transform: rotate(180deg);
-        width: 3vw;
-    }
-}
-
-@keyframes stingRotateBack {
-    0% {
-        position: fixed;
-        left: 85vw;
-        transform: rotate(180deg);
-        width: 3vw;
-    }
-    100% {
-        position: fixed;
-        left: 47vw;
-    }
-}
-
-@keyframes logo {
-    0% {
-        width: 30vw;
-        left: 35vw;
-    }
-    100% {
-        left: 40vw;
-        width: 20vw;
-    }
-}
-
-#stingButtonImg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    align-content: center;
-    width: 4vw;
-    position: fixed;
-    left: 47.9vw;
-    bottom: 2vw;
 }

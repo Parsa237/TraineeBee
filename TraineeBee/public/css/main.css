@@ -7,74 +7,12 @@
     color: #323232;
 }
 
-.nav {
-    font-size: 2em;
-    width: 100%;
-}
 
-.navRow {
-    width: 100%;
-    position: fixed;
-}
-
-.firstPartNav {
-    float: left;
-    color: #323232;
-    font-size: 25px;
-}
-
-.secondPartNav {
-    text-align: right;
-    color: #323232;
-    font-size: 25px;
-}
-
-.secondPartNavDashboard {
-    float: left;
-    color: #323232;
-    font-size: 25px;
-}
-
-.secondPartNavDashboard:hover {
-    color: white;
-}
-
-.firstPartNav:hover {
-    color: white;
-}
-
-.secondPartNav:hover {
-    color: white;
-}
-
-#logo {
-    display: block;
-    position: fixed;
-    top: 2vw;
-    left: 35vw;
-    margin-left: auto;
-    margin-right: auto;
-    align-content: center;
-    width: 30vw;
-    animation-duration: 1s;
-    animation-name: logo;
-}
-
-#logoDashboard {
-    display: block;
-    position: fixed;
-    top: 2vw;
-    left: 40vw;
-    margin-left: auto;
-    margin-right: auto;
-    align-content: center;
-    width: 20vw;
-}
 
 @keyframes stingRotate {
     0% {
         position: fixed;
-        left: 47vw;
+        left: 48.5vw;
     }
     100% {
         position: fixed;
@@ -93,18 +31,7 @@
     }
     100% {
         position: fixed;
-        left: 47vw;
-    }
-}
-
-@keyframes logo {
-    0% {
-        width: 30vw;
-        left: 35vw;
-    }
-    100% {
-        left: 40vw;
-        width: 20vw;
+        left: 48.5vw;
     }
 }
 
@@ -132,11 +59,11 @@
 
 .textUserName {
     font-size: 1.6vw;
-    color: white;
+    color: black;
 }
 
 .textUserName:hover {
-    color: lightgray;
+    color: #FFC755;
 }
 .HeaderFontDash{
     color:#222426
@@ -144,4 +71,12 @@
 .DescHeaderDash{
     font-size: 20px;
     font-family:"Arial Black", Gadget, sans-serif;
+} 
+
+.grid-container {
+    display:grid;
+    grid-template-columns: auto auto;
+}
+a:hover{
+    color: #FFC755;
 }
