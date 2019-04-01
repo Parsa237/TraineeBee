@@ -11,7 +11,6 @@
                 <h6 class="m-t-2">Upload a different photo</h6>
                 <label class="custom-file">
                     <input type="file" id="file" class="custom-file-input">
-                    <span class="custom-file-control">Choose file</span>
                 </label>
             </div>
         </div>
@@ -39,16 +38,19 @@
                         <h3> Heading</h3>
                        <p>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                       </p>
 
-                        - o, fringilla vel, aliqu
-                        - rem ipsum dolo
-                        - In enim justo, rhoncus
-                        - Cum sociis natoque
-
+                        <p> - o, fringilla vel, aliqu</p>
+                        <p> - rem ipsum dolo</p>
+                        <p> - In enim justo, rhoncus</p>
+                        <p> - Cum sociis natoque</p>
+                    <p>
                         Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.
-                       </p><!--/row-->
+                    </p>
                     </div>
-
+                    <div class="tab-pane active" id="messages">
+                        test
+                    </div>
                     <div class="tab-pane" id="edit">
                         <h4 class="m-y-2">Edit Profile</h4>
                         <form role="form">
@@ -84,8 +86,11 @@
                             </div>
                             <div class="form-group row">
                                 <label class="col-lg-3 col-form-label form-control-label">Address</label>
-                                <div class="col-lg-9">
+                                <div class="col-lg-6">
                                     <input class="form-control" type="text" value="" placeholder="Street">
+                                </div>
+                                <div class="col-lg-3">
+                                    <input class="form-control" type="text" value="" placeholder="Number">
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -97,39 +102,35 @@
                                     <input class="form-control" type="text" value="" placeholder="State">
                                 </div>
                             </div>
+
                             <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Time Zone</label>
+                                <label class="col-lg-3 col-form-label form-control-label">Internship Details </label>
                                 <div class="col-lg-9">
-                                    <select id="user_time_zone" class="form-control" size="0">
-                                        <option value="Hawaii">(GMT-10:00) Hawaii</option>
-                                        <option value="Alaska">(GMT-09:00) Alaska</option>
-                                        <option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)</option>
-                                        <option value="Arizona">(GMT-07:00) Arizona</option>
-                                        <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)</option>
-                                        <option value="Central Time (US &amp; Canada)" selected="selected">(GMT-06:00) Central Time (US &amp; Canada)</option>
-                                        <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
-                                        <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
-                                    </select>
+                                    <textarea class="form-control" rows="5" id="comment"></textarea>
                                 </div>
                             </div>
+
                             <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Username</label>
+                                <label class="col-lg-3 col-form-label form-control-label">Programming Details</label>
                                 <div class="col-lg-9">
-                                    <input class="form-control" type="text" value="janeuser">
+                                    <textarea class="form-control" rows="5" id="comment"></textarea>
                                 </div>
                             </div>
+
                             <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Password</label>
+                                <label class="col-lg-3 col-form-label form-control-label">Required Skills</label>
                                 <div class="col-lg-9">
-                                    <input class="form-control" type="password" value="11111122333">
+                                    <textarea class="form-control" rows="5" id="comment"></textarea>
                                 </div>
                             </div>
+
                             <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Confirm password</label>
+                                <label class="col-lg-3 col-form-label form-control-label">General Info</label>
                                 <div class="col-lg-9">
-                                    <input class="form-control" type="password" value="11111122333">
+                                    <textarea class="form-control" rows="5" id="comment"></textarea>
                                 </div>
                             </div>
+
                             <div class="form-group row">
                                 <label class="col-lg-3 col-form-label form-control-label"></label>
                                 <div class="col-lg-9">
