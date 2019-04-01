@@ -42,7 +42,7 @@
                 <div class="col-4">
                 </div>
                 <div class="col-2">
-                    <a class="secondPartNavDashboard" href="/profile">profile</a>
+                    <a class="secondPartNavDashboard" href="./profile">profile</a>
                 </div>
                 <div class="col-2">
                     <li class="secondPartNavDashboard dropdown">
