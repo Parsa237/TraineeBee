@@ -29,7 +29,7 @@
                 </div>
             </div>
         </div>
-        <img id="logo" src="{{asset('images/logo.png')}}" alt="logo">
+        <img id="logo" src="{{asset('images/banner_logo.png')}}" alt="logo">
     @else
         <div class="container-fluid nav pr-0 pt-5">
             <div class="row navRow justify-content-center pl-4 pr-4">
@@ -66,7 +66,9 @@
                 </div>
             </div>
         </div>
-        <img id="logoDashboard" src="{{asset('images/logo.png')}}" alt="logo">
+    <div class="hexagon">
+        <img id="logoDashboard" src="{{asset('images/banner_logo.png')}}" alt="logo">
+    </div>
     @endguest
 
 

@@ -1,40 +1,110 @@
-
-.hexagon {
-    position: relative;
-    width: 80px;
-    height: 46.19px;
-    background-color: #FFC755;
-    margin: 23.09px 0;
-    border-left: solid 5px #333333;
-    border-right: solid 5px #333333;
+.nav {
+    font-size: 2em;
+    width: 100%;
 }
 
-.hexagon:before,
-.hexagon:after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    width: 56.57px;
-    height: 56.57px;
-    -webkit-transform: scaleY(0.5774) rotate(-45deg);
-    -ms-transform: scaleY(0.5774) rotate(-45deg);
-    transform: scaleY(0.5774) rotate(-45deg);
-    background-color: inherit;
-    left: 6.7157px;
+.navRow {
+    width: 100%;
+    position: fixed;
 }
 
-.hexagon:before {
-    top: -28.2843px;
-    border-top: solid 7.0711px #333333;
-    border-right: solid 7.0711px #333333;
+
+
+.firstPartNav {
+    float: left;
+    color: white;
 }
 
-.hexagon:after {
-    bottom: -28.2843px;
-    border-bottom: solid 7.0711px #333333;
-    border-left: solid 7.0711px #333333;
+.secondPartNav {
+    text-align: right;
+    color: white;
 }
 
-.hexagon:hover{
+.secondPartNavDashboard {
+    float: left;
+    color: white;
+}
 
+.secondPartNavDashboard:hover {
+    color: white;
+}
+
+.firstPartNav:hover {
+    color: white;
+}
+
+.secondPartNav:hover {
+    color: white;
+}
+
+#logo {
+    display: block;
+    position: fixed;
+    top: 0vw;
+    left: 35vw;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    width: 30vw;
+    animation-duration: 1s;
+    animation-name: logo;
+}
+
+#logoDashboard {
+    display: block;
+    position: fixed;
+    top: 0vw;
+    left: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    width: 20vw;
+}
+
+@keyframes stingRotate {
+    0% {
+        position: fixed;
+        left: 47vw;
+    }
+    100% {
+        position: fixed;
+        left: 85vw;
+        transform: rotate(180deg);
+        width: 3vw;
+    }
+}
+
+@keyframes stingRotateBack {
+    0% {
+        position: fixed;
+        left: 85vw;
+        transform: rotate(180deg);
+        width: 3vw;
+    }
+    100% {
+        position: fixed;
+        left: 47vw;
+    }
+}
+
+@keyframes logo {
+    0% {
+        width: 30vw;
+        left: 35vw;
+    }
+    100% {
+        left: 40vw;
+        width: 20vw;
+    }
+}
+
+#stingButtonImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    width: 6vw;
+    position: fixed;
+    left: 47vw;
+    bottom: 2vw;
 }
