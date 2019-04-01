@@ -95,15 +95,17 @@
         if ($(this).scrollTop() > 10) { // this refers to window
             $("#stingButtonImg").addClass("stingAnimation");
             $("#stingButtonImg").removeClass("stingAnimationBack");
-            $("#stingButtonImg").onclick(function () {
-                $(this).scrollTop(0);
-            })
+
         } else {
             $("#stingButtonImg").addClass("stingAnimationBack");
             $("#stingButtonImg").removeClass("stingAnimation");
         }
     });
-
+    $(window).scroll(function () {
+        $("#stingButtonImg").click(function () {
+            window.scrollTo(0, 0);
+        });
+    });
 </script>
 </body>
 </html>
