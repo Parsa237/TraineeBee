@@ -14,10 +14,8 @@
             <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
             <!-- Styles -->
-            <link href="http://127.0.0.1:8000/css/AboutStyle.css" rel="stylesheet" type="text/css">
+            <link href="http://127.0.0.1:8000/css/main.css" rel="stylesheet" type="text/css">
                 </head>
-
-                < class="background">
 
         <body>
 
