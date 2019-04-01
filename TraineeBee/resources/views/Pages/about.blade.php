@@ -1,9 +1,29 @@
 @extends('Layouts.layout')
 @section('content')
 
+        <!doctype html>
+        <html lang="{{ app()->getLocale() }}">
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <div class="flex-center position-ref full-height">
-        <div class="col-md-8">
+            <title>Laravel</title>
+
+            <!-- Fonts -->
+            <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+
+            <!-- Styles -->
+            <link href="http://127.0.0.1:8000/css/AboutStyle.css" rel="stylesheet" type="text/css">
+                </head>
+
+                < class="background">
+
+        <body>
+
+            <div class="flex-center position-ref full-height">
+            </div>
+            <div class="col-md-8 flex-center">
             <h1>About the Project</h1>
             <p>Trainee Bee </p><div class="smaller">Join the Hive TM</div> is an Exange Program between the Netherlands and England for four weeks in total.<br>
             they have been working on this project. And had allot of fun with it.<br>
@@ -47,5 +67,8 @@
             <h1>About Us</h1>
             <p>This is the about page for our project called TraineeBee</p>
         </div>
-    </div>
+        
+        </body>
+</html>
+
 @endsection
