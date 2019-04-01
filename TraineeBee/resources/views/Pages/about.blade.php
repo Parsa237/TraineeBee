@@ -22,7 +22,7 @@
 
             <div class="flex-center position-ref full-height">
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 No_Margin">
                  <h1>About the Project</h1>
                     <p>Trainee Bee <div class="smaller">Join the Hive TM</div> is an Exange Program between the Netherlands and England for four weeks in total.<br>
                     they have been working on this project. And had allot of fun with it.<br>
@@ -30,7 +30,7 @@
                     In the exchange the Dutch people showed the places where they went to for theire internship.<br>
                     To showed them what it is like and how this will function in theire education.<br>
                     And What type of profits it has for the student and companies.
-                    (To know more about what the profits are about Internships in your <a href="/info" class="Links">company</a>.
+                    (To know more about what the profits are about Internships in your <a href="#info" class="Links">company</a>.
                     The students interviewed the companies as well and got exited about the amount they were missing. <br>
                     <br>
                     The students will also learn how they work in different countries, what their work progress is like. And in big international groups which is a great move for all the students in the future.<br> The two groups showed them their city. From the begin it was very clear what we wanted. We wanted a site which make it possible to have internships in the UK as well.
@@ -41,7 +41,7 @@
             <!-- first picture-->
             <img src="{{asset('images/placeholder.png')}}" alt="This a picture of the Group!  The dutch and The English peeps :D">
 
-            <div class="col-md-6 Blank "></div>
+            <div class="col-md-6 Blank"></div>
             <div class="col-md-6 Hexagon">
                 //Put picture here
             </div>
