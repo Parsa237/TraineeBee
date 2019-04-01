@@ -6,4 +6,5 @@
 
         <img id="stingButtonImg" src="images/stingButton2.png" alt="">
 
+
 @endsection
