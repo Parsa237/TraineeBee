@@ -67,8 +67,7 @@
             <h1>About Us</h1>
             <p>This is the about page for our project called TraineeBee</p>
         </div>
-    
-
+        
         </body>
 </html>
 
