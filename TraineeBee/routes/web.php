@@ -21,9 +21,13 @@ Route::get('/login', 'PagesController@login');
 Route::get('/contact', 'PagesController@contact');
 Route::get('/profile', 'PagesController@profile');
 Route::get('/admin', 'PagesController@adminpanel');
+Route::get('/home', function(){return view('home');});
+Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
+Route::get('/dashboard/create', 'PostsController@create');
 Auth::routes();
 
-Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
-
 Route::resource('dashboard', 'PostsController');
-Route::get('/home', function(){return view('home');});
+
+//
+Route::post('/dashboard/create', 'PostsController@store');
+

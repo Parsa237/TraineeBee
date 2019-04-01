@@ -1,5 +1,4 @@
-<html>
-
+<html lang="{{config('app.locale')}}">
 <head>
     <title>{{config('app.name', 'TraineeBee')}}</title>
     <meta charset="utf-8">
@@ -75,12 +74,6 @@
         @yield('content')
     </div>
 
-    <!-- here should the footer be -->
-    <div class="container">
-        <footer>
-            <p>this is a footer</p>
-        </footer>
-    </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
