@@ -27,6 +27,7 @@ Route::get('/dashboard/create', 'PostsController@create');
 Auth::routes();
 
 Route::resource('dashboard', 'PostsController');
+Route::get('/yourposts', 'HomeController@index');
 
 
 //Route::post('/dashboard/create', 'PostsController@store');

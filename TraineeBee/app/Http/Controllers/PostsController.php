@@ -108,4 +108,5 @@ class PostsController extends Controller
 
         return redirect('/dashboard')->with('success', 'Post Deleted');
     }
+
 }

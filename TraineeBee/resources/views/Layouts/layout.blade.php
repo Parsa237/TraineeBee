@@ -17,8 +17,11 @@
                 <div class="col-2">
                     <a class="firstPartNav" href="/">Home</a>
                 </div>
-                <div class="col-2">
-                    <a class="firstPartNav" href="#about">About</a>
+                <div class="col-1">
+                    <a class="firstPartNav" href="/dashboard">Dashboard</a>
+                </div>
+                <div class="col-1">
+                    <a class="firstPartNav" href="/#about">About</a>
                 </div>
                 <div class="col-4"></div>
                 <div class="col-2">
@@ -52,7 +55,8 @@
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="./dashboard/create">Create post</a>
+                            <a class="dropdown-item" href="/yourposts">Your posts</a>
+                            <a class="dropdown-item" href="/dashboard/create">Create post</a>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                                              document.getElementById('logout-form').submit();">

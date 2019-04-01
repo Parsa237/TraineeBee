@@ -1,9 +1,6 @@
 @extends('Layouts.layout')
 @section('content')
-    @guest
-        <p>please log in</p>
-    @else
-        <h1>Offers:</h1>
+    <h1>Offers:</h1>
         @if(count($posts) > 0)
             @foreach($posts as $post)
                 <div class=" card-body bg-light p-3 grid-container DashBorder">
@@ -26,5 +23,4 @@
         @else
             <p>No posts found</p>
         @endif
-    @endguest
 @endsection
