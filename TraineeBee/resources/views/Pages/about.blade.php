@@ -1,6 +1,14 @@
 @extends('Layouts.layout')
 @section('content')
-    <div class="background">
+        <!doctype html>
+        <html lang="{{ app()->getLocale() }}">
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+        <body>
+            <div class="background">
 
         <div class="container">
 
@@ -30,7 +38,7 @@
                 (To know more about what the profits are abour Internships in your company <a href="/Companies" class="Links">Click here</a>.)
                 The students intervieuwd the companies ass well and  got exited about the amount they were missing. <br>
                 <br>
-                The students will also learn How they work in different countries, what theire work progress is like. And in big international groups which is a great move for all the students in the future.<br> The Two Groups Showed Them Their City. From the Begin It was Very Clear what we wanted. We Wanted A Site which make it Possible to Have Internships in the UK as Well.
+                The students will also learn How they work in different countries, what thiere work progress is like. And in big international groups which is a great move for all the students in the future.<br> The Two Groups Showed Them Their City. From the Begin It was Very Clear what we wanted. We Wanted A Site which make it Possible to Have Internships in the UK as Well.
                 And to Help Students College and Companies their way through this new way.
                 <p></p>
             </div>
@@ -72,4 +80,7 @@
             </footer>
         </div>
     </div>
+        </body>
+</html>
+
 @endsection
