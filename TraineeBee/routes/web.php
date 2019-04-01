@@ -28,6 +28,7 @@ Auth::routes();
 
 Route::resource('dashboard', 'PostsController');
 
-//
-Route::post('/dashboard/create', 'PostsController@store');
+
+//Route::post('/dashboard/create', 'PostsController@store');
+//Route::post('/dashboard/{{$post->id}}/update', 'PostsController@update');
 
