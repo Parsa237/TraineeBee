@@ -6,4 +6,9 @@
 
         <img id="stingButtonImg" src="images/stingButton2.png" alt="">
 
+
+    <h1 id="about">
+        Header
+    </h1>
+    <p>EEFJE TEXR</p>
 @endsection
