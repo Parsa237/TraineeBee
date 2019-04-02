@@ -24,7 +24,7 @@
     <h2></h2>
     <p>Trainee Bee
     <div class="smaller">Join the Hive TM</div>
-        is an Exange Program between the Netherlands and England for four weeks in total.<br>
+        is an Exchange Program between the Netherlands and England for four weeks in total.<br>
         They have been working on this project and had allot of fun with it.<br>
         <br>
         In the exchange the Dutch students showed the places where they went to for theire internship,<br>
