@@ -6,8 +6,12 @@
                 <div class=" card-body bg-light p-3 grid-container DashBorder">
                     <div class="test"><a class= "DashBorder2TEST">hafiyhefiuqefh</a></div>
                     <div>
-                        <font color='#222426' size='2pt'/>
+
+                       
+                        <h1><a href="/dashboard/{{$post->id}}"  class="HeaderFontDash">{{$post->title}}</a></h1>
+
                         <h1><a href="/posts/{{$post->id}}"  class="HeaderFontDash">{{$post->title}}</a></h1>
+
                         <h1>
 {{--                            <p class="DashDesc">Job Title: {{$post->title}}</p>--}}
                         </h1>
