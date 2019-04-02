@@ -15,18 +15,17 @@
 //this will handle all the requests for customers looking for pages.
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
-Route::get('/dashboard', 'PagesController@dashboard');
 Route::get('/info', 'PagesController@CandCInfo');
 Route::get('/login', 'PagesController@login');
 Route::get('/contact', 'PagesController@contact');
 Route::get('/profile', 'PagesController@profile');
 Route::get('/admin', 'PagesController@adminpanel');
 Route::get('/home', function(){return view('home');});
-Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
-Route::get('/dashboard/create', 'PostsController@create');
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+Route::get('/posts/create', 'PostsController@create');
 Auth::routes();
 
-Route::resource('dashboard', 'PostsController');
+Route::resource('posts', 'PostsController');
 Route::get('/yourposts', 'HomeController@index');
 
 
