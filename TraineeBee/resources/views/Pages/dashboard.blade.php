@@ -4,11 +4,11 @@
         @if(count($posts) > 0)
             @foreach($posts as $post)
                 <div class=" card-body bg-light p-3 grid-container DashBorder">
-                    <div class="test"><a class= "DashBorder2TEST">hafiyhefiuqefh</a></div>
+                    <div class="dashboard1"><a class= "DashBorder2TEST">Test here for Image</a></div>
                     <div>
 
                        
-                        <h1><a href="/dashboard/{{$post->id}}"  class="HeaderFontDash">{{$post->title}}</a></h1>
+                       
 
                         <h1><a href="/posts/{{$post->id}}"  class="HeaderFontDash">{{$post->title}}</a></h1>
 
