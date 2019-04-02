@@ -57,7 +57,7 @@
                             <div class="form-group row">
                                 <label class="col-lg-3 col-form-label form-control-label">First name</label>
                                 <div class="col-lg-9">
-                                    <input class="form-control" type="text" value="Jane">
+                                    <input class="form-control" type="text" value='{{Auth::user()->name}}'>
                                 </div>
                             </div>
                             <div class="form-group row">

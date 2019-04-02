@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lilita+One" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 </head>
 <body>
 <div class="background">
@@ -17,15 +19,18 @@
                 <div class="col-2">
                     <a class="firstPartNav" href="./">Home</a>
                 </div>
-                <div class="col-2">
-                    <a class="firstPartNav" href="#about">About</a>
+                <div class="col-1">
+                    <a class="firstPartNav" href="./dashboard">Dashboard</a>
+                </div>
+                <div class="col-1">
+                    <a class="firstPartNav" href="./#about">About</a>
                 </div>
                 <div class="col-4"></div>
                 <div class="col-2">
                     <a class="secondPartNav" href="#info">Information</a>
                 </div>
                 <div class="col-2">
-                    <a class="secondPartNav" href="./login">Login/register</a>
+                    <a class="secondPartNav" href="./login">Login/Register</a>
                 </div>
             </div>
         </div>
@@ -42,7 +47,7 @@
                 <div class="col-4">
                 </div>
                 <div class="col-2">
-                    <a class="secondPartNavDashboard" href="./profile">profile</a>
+                    <a class="secondPartNavDashboard" href="./profile">Profile</a>
                 </div>
                 <div class="col-2">
                     <li class="secondPartNavDashboard dropdown">
@@ -52,6 +57,7 @@
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./yourposts">Your posts</a>
                             <a class="dropdown-item" href="./dashboard/create">Create post</a>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
@@ -98,16 +104,25 @@
         if ($(this).scrollTop() > 10) { // this refers to window
             $("#stingButtonImg").addClass("stingAnimation");
             $("#stingButtonImg").removeClass("stingAnimationBack");
-
+            $("#stingButtonImg").click(function () {
+                window.scrollTo(0, 0);
+            });
         } else {
             $("#stingButtonImg").addClass("stingAnimationBack");
             $("#stingButtonImg").removeClass("stingAnimation");
+            $("#stingButtonImg").click(function () {
+                window.scrollTo(0, 4500);
+            });
         }
     });
-    $(window).scroll(function () {
-        $("#stingButtonImg").click(function () {
-            window.scrollTo(0, 0);
-        });
+    $(window).ready(function () {
+        $i = 0;
+        if ($i < 1) {
+            $("#stingButtonImg").click(function () {
+                window.scrollTo(0, 4500);
+            });
+            $i++;
+        }
     });
 </script>
 </body>

@@ -13,30 +13,45 @@
     float: right;
     color: #323232;
     font-size: 25px;
+    transition: 0.3s;
+    border-bottom: 3px solid #f5f8fa;
 }
 
 .secondPartNav {
     text-align: right;
     color: #323232;
     font-size: 25px;
+    transition: 0.3s;
+    border-bottom: 3px solid #f5f8fa;
+    
 }
 
 .secondPartNavDashboard {
     float: left;
     color: #323232;
     font-size: 25px;
+    transition: 0.3s;
+    border-bottom: 3px solid #f5f8fa;
 }
 
 .secondPartNavDashboard:hover {
-    color: #FFC755;
+    color: #323232;
+    border-bottom: 3px solid black;
+    text-decoration: none;
+
 }
 
 .firstPartNav:hover {
-    color: #FFC755;
+    color: #323232;
+    text-decoration: none;
+    border-bottom: 3px solid black;
 }
 
 .secondPartNav:hover {
-    color: #FFC755;
+    color: #323232;
+    border-bottom: 3px solid black;
+    text-decoration: none;
+
 }
 
 #logo {
