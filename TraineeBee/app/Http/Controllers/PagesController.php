@@ -35,7 +35,7 @@ class PagesController extends Controller
 				'name' => 'name3',
 				'description' => 'description3'
 			]
-		]);;
+		]);
     }
 
     public function CandCInfo(){
