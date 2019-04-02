@@ -77,11 +77,12 @@
     font-size: 20px;
     font-family:"Arial Black", Gadget, sans-serif;
     text-align: center;
+    word-break:break-word;
 } 
 
 .grid-container {
     display:grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 20% 80%;
 }
 a:hover{
     color: #FFC755;
@@ -89,7 +90,8 @@ a:hover{
 .DashBorder{
    border-radius: 12px;
   border: 2px solid;
-  padding: 20px;
+  padding: 80%;
+    margin:2.5%;
 }
 .DashBorder2TEST{
     border-radius: 12px;
@@ -105,4 +107,8 @@ a:hover{
 }
 .footer a{
     color: black;
+
+.test{
+    margin-top:10%;
+
 }
