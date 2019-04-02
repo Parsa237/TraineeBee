@@ -17,12 +17,9 @@
         <div class="container-fluid nav pr-0 pt-5">
             <div class="row navRow justify-content-center pl-4 pr-4">
                 <div class="col-2">
-                    <a class="firstPartNav" href="/">Home</a>
-                </div>
-                <div class="col-1">
                     <a class="firstPartNav" href="/dashboard">Dashboard</a>
                 </div>
-                <div class="col-1">
+                <div class="col-2">
                     <a class="firstPartNav" href="/#about">About</a>
                 </div>
                 <div class="col-4"></div>
@@ -34,7 +31,7 @@
                 </div>
             </div>
         </div>
-        <img id="logo" src="{{asset('images/banner_logo.png')}}" alt="logo">
+    <a class="logoNav" href="/"><img id="logo" src="{{asset('images/banner_logo.png')}}" alt="logo" href="/home"></a>
     @else
         <div class="container-fluid nav pr-0 pt-5">
             <div class="row navRow justify-content-center pl-4 pr-4">
