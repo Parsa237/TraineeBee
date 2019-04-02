@@ -13,6 +13,7 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
+        //Needs new migrate
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id')->unique();
             $table->string('name');
