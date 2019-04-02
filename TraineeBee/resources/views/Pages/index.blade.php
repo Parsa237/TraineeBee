@@ -42,7 +42,7 @@
 
 
     <h1 id="info">
-        Info
+        Information
     </h1>
 
 
