@@ -4,7 +4,7 @@
         <p>please log in</p>
     @else
         <h1>Edit post</h1>
-        <form method="POST" action="{{ route('dashboard.update', $post->id) }}">
+        <form method="POST" action="{{ route('posts.update', $post->id) }}">
             @csrf
             <div class="form-group">
                 <h2 class="inputname">Title</h2>

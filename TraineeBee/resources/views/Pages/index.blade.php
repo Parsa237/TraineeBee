@@ -24,20 +24,20 @@
     <h2></h2>
     <p>Trainee Bee
     <div class="smaller">Join the Hive TM</div>
-    is an Exange Program between the Netherlands and England for four weeks in total.<br>
-    They have been working on this project and had allot of fun with it.<br>
-    <br>
-    In the exchange the Dutch students showed the places where they went to for theire internship,<br>
-    To showed them what it is like and how this will function in theire education<br>
-    and What type of profits it has for the student and companies.
-    (To know more about what the profits are about Internships in your <a href="#info" class="Links">company</a>.
-    The students interviewed the companies as well and got exited about the amount they were missing. <br>
-    <br>
-    The students will also learn how they work in different countries, what their work progress is like and in big
-    international groups which is a great move for all the students in the future.<br> The two groups showed them
-    their city. From the begin it was very clear what we wanted. We wanted a site which make it possible to have
-    internships in the UK as well 
-    and to Help Students College and Companies their way through this new way.
+        is an Exange Program between the Netherlands and England for four weeks in total.<br>
+        They have been working on this project and had allot of fun with it.<br>
+        <br>
+        In the exchange the Dutch students showed the places where they went to for theire internship,<br>
+        To showed them what it is like and how this will function in theire education<br>
+        and What type of profits it has for the student and companies.
+        (To know more about what the profits are about Internships in your <a href="#info" class="Links">company</a>.
+        The students interviewed the companies as well and got exited about the amount they were missing. <br>
+        <br>
+        The students will also learn how they work in different countries, what their work progress is like and in big
+        international groups which is a great move for all the students in the future.<br> The two groups showed them
+        their city. From the begin it was very clear what we wanted. We wanted a site which make it possible to have
+        internships in the UK as well
+        and to Help Students College and Companies their way through this new way.
     </p>
 
 

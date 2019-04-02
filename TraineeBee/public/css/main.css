@@ -100,6 +100,15 @@ a:hover{
   padding: 20px;
     margin-right: auto;
 }
+#about {
+    margin-top: 20vw;
+}
+.footer{
+    background-color: #ffc107;
+    width: 100%;
+}
+.footer a{
+    color: black;
 
 .dashboard1{
     margin-top:15%;

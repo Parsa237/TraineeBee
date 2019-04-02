@@ -8,17 +8,10 @@ use App\Post;
 
 class PostsController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+    public function __construct()
     {
-        $posts = Post::orderBy('created_at')->paginate(5);
-        return view('Pages.dashboard')->with('posts', $posts);
+        $this->middleware('auth', ['except' => 'show']);
     }
-
     /**
      * Show the form for creating a new resource.
      *
