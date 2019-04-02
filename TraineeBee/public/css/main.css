@@ -83,6 +83,7 @@
 .grid-container {
     display:grid;
     grid-template-columns: 20% 80%;
+    grid-column-gap: 2.5%;
 }
 a:hover{
     color: #FFC755;
@@ -97,9 +98,11 @@ a:hover{
     border-radius: 12px;
   border: 2px solid;
   padding: 20px;
+    margin-right: auto;
 }
 
-.test{
-    margin-top:10%;
-
+.dashboard1{
+    margin-top:15%;
+    margin-left: center;
+    resize: both;
 }
