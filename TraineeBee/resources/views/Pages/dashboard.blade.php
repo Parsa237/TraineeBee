@@ -4,7 +4,7 @@
         @if(count($posts) > 0)
             @foreach($posts as $post)
                 <div class=" card-body bg-light p-3 grid-container DashBorder">
-                    <div class="dashboard1"><a class= "DashBorder2TEST">Test here for Image</a></div>
+                    <div class="dashboarda"><a class= "DashBorder2TEST">Test here for Image</a></div>
                     <div>
 
                        
