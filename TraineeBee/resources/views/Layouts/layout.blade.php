@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lilita+One" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 </head>
 <body>
 <div class="background">
@@ -15,12 +17,9 @@
         <div class="container-fluid nav pr-0 pt-5">
             <div class="row navRow justify-content-center pl-4 pr-4">
                 <div class="col-2">
-                    <a class="firstPartNav" href="./">Home</a>
-                </div>
-                <div class="col-1">
                     <a class="firstPartNav" href="./dashboard">Dashboard</a>
                 </div>
-                <div class="col-1">
+                <div class="col-2">
                     <a class="firstPartNav" href="./#about">About</a>
                 </div>
                 <div class="col-4"></div>

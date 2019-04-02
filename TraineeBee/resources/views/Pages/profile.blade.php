@@ -4,7 +4,7 @@
 @endsection
 @section('content')
 
-    <div class="container ">
+    <div class="container border-top">
         <div class="row m-y-2">
             <div class="col-lg-12 pull-lg-12 text-xs-center">
                 <img src="//placehold.it/150" class="m-x-auto img-fluid img-circle" alt="avatar">
@@ -57,7 +57,7 @@
                             <div class="form-group row">
                                 <label class="col-lg-3 col-form-label form-control-label">First name</label>
                                 <div class="col-lg-9">
-                                    <input class="form-control" type="text" value="Jane">
+                                    <input class="form-control" type="text" value='{{Auth::user()->name}}'>
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -75,31 +75,31 @@
                             <div class="form-group row">
                                 <label class="col-lg-3 col-form-label form-control-label">Company</label>
                                 <div class="col-lg-9">
-                                    <input class="form-control" type="text" value="">
+                                    <input class="form-control" type="text" value="Google">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-lg-3 col-form-label form-control-label">Website</label>
                                 <div class="col-lg-9">
-                                    <input class="form-control" type="url" value="">
+                                    <input class="form-control" type="url" value="www.google.com">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-lg-3 col-form-label form-control-label">Address</label>
                                 <div class="col-lg-6">
-                                    <input class="form-control" type="text" value="" placeholder="Street">
+                                    <input class="form-control" type="text" value="Wallstreet" placeholder="Street">
                                 </div>
                                 <div class="col-lg-3">
-                                    <input class="form-control" type="text" value="" placeholder="Number">
+                                    <input class="form-control" type="text" value="267" placeholder="Number">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-lg-3 col-form-label form-control-label"></label>
                                 <div class="col-lg-6">
-                                    <input class="form-control" type="text" value="" placeholder="City">
+                                    <input class="form-control" type="text" value="New York" placeholder="City">
                                 </div>
                                 <div class="col-lg-3">
-                                    <input class="form-control" type="text" value="" placeholder="State">
+                                    <input class="form-control" type="text" value="dfg21564" placeholder="Postal Code">
                                 </div>
                             </div>
 
@@ -118,7 +118,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Required Skills</label>
+                                <label class="col-lg-3 col-form-label form-control-label">Our Skills</label>
                                 <div class="col-lg-9">
                                     <textarea class="form-control" rows="5" id="comment"></textarea>
                                 </div>
