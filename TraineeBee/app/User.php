@@ -32,4 +32,8 @@ class User extends Authenticatable
         'isAdmin' => false
     ];
 
+    public function posts(){
+        return $this->hasMany('App\Post');
+    }
+
 }
