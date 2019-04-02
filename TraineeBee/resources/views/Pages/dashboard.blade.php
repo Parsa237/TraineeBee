@@ -8,7 +8,7 @@
                     <div>
 
                        
-                        <h1><a href="/dashboard/{{$post->id}}"  class="HeaderFontDash">{{$post->title}}</a></h1>
+                       
 
                         <h1><a href="/posts/{{$post->id}}"  class="HeaderFontDash">{{$post->title}}</a></h1>
 
