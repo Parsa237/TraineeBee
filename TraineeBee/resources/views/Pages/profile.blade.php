@@ -7,7 +7,7 @@
     <div class="container border-top">
         <img src="http://placehold.it/1080x400" class="m-x-auto img-fluid img-circle" alt="avatar">
 
-        <div class="row m-y-2" style="margin: -125px 125px 0 0  ">
+        <div class="row m-y-2" style="margin: -125px 0 0 125px">
             <div class="col-lg-12 pull-lg-12 text-xs-center">
                 <img src="http://placehold.it/250" class="m-x-auto img-fluid img-circle border profilePic" alt="avatar">
                 <h6 class="m-t-2">Upload a different photo</h6>
@@ -121,21 +121,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Programming Details</label>
-                                <div class="col-lg-9">
-                                    <textarea class="form-control" rows="5" id="comment"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
                                 <label class="col-lg-3 col-form-label form-control-label">Our Skills</label>
-                                <div class="col-lg-9">
-                                    <textarea class="form-control" rows="5" id="comment"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">General Info</label>
                                 <div class="col-lg-9">
                                     <textarea class="form-control" rows="5" id="comment"></textarea>
                                 </div>
