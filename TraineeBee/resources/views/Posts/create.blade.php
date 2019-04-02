@@ -1,10 +1,7 @@
 @extends('Layouts.layout')
 @section('content')
-    @guest
-        <p>please log in</p>
-    @else
         <h1>Create post</h1>
-        <form method="POST" action="{{ route('dashboard.store') }}">
+        <form method="POST" action="{{ route('posts.store') }}">
             @csrf
             <div class="form-group">
                 <h2 class="inputname">Title</h2>
@@ -16,6 +13,4 @@
             </div>
             <button class="btn btn-primary" type="submit">Submit</button>
         </form>
-
-    @endguest
 @endsection

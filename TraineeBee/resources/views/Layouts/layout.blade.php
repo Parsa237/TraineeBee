@@ -31,7 +31,7 @@
                 </div>
             </div>
         </div>
-    <a class="logoNav" href="/"><img id="logo" src="{{asset('images/banner_logo.png')}}" alt="logo"></a>
+    <a class="logoNav" href="/"><img id="logo" src="{{asset('images/banner_logo.png')}}" alt="logo" href="/home"></a>
     @else
         <div class="container-fluid nav pr-0 pt-5">
             <div class="row navRow justify-content-center pl-4 pr-4">
@@ -55,7 +55,7 @@
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="/yourposts">Your posts</a>
-                            <a class="dropdown-item" href="/dashboard/create">Create post</a>
+                            <a class="dropdown-item" href="/posts/create">Create post</a>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                                              document.getElementById('logout-form').submit();">
