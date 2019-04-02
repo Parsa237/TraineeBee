@@ -42,7 +42,7 @@
 
 
     <h1 id="info">
-        Info
+        I'm a beeliever~!
     </h1>
 
 
