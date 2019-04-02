@@ -80,11 +80,78 @@
         @yield('content')
     </div>
     <div class="container">
-        <footer>
-            <p>this is a footer</p>
-        </footer>
+
     </div>
 </div>
+        <footer class="page-footer font-small blue pt-4 footer">
+
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
+
+                        <!-- Content -->
+                        <h5 class="text-uppercase">TraineeBee</h5>
+                        <p>Feel free to contact us if you have any suggestions about our page. </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none pb-3">
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+
+                        <!-- Links -->
+                        <h5 class="text-uppercase">headings</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="./#about">About us<a>
+                            </li>
+                            <li>
+                                <a href="./#info">Information</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+
+                        <!-- Links -->
+                        <h5 class="text-uppercase">Contact</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">Login</a>
+                            </li>
+                            <li>
+                                <a href="#!">Contact us!</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Footer Links -->
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3 ">© 2018 Copyright:
+                Traineebee
+            </div>
+        </footer>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

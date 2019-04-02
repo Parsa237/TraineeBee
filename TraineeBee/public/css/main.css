@@ -98,6 +98,15 @@ a:hover{
   border: 2px solid;
   padding: 20px;
 }
+#about {
+    margin-top: 20vw;
+}
+.footer{
+    background-color: #ffc107;
+    width: 100%;
+}
+.footer a{
+    color: black;
 
 .test{
     margin-top:10%;
