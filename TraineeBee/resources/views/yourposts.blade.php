@@ -22,7 +22,7 @@
                                     <td>{{$post->title}}</td>
                                     <td><a href="/posts/{{$post->id}}/edit" class="btn btn-primary">Edit post</a></td>
                                     <td>
-                                        <form action="{{ route('dashboard.destroy', $post->id)}}" method="post">
+                                        <form action="{{ route('posts.destroy', $post->id)}}" method="post">
                                             @csrf
                                             @method('DELETE')
                                             <button class="btn btn-danger float-right" type="submit">Delete</button>

@@ -9,7 +9,7 @@
 
         <div class="row m-y-2" style="margin: -125px 0 0 125px">
             <div class="col-lg-12 pull-lg-12 text-xs-center">
-                <img src="http://placehold.it/250" class="m-x-auto img-fluid img-circle border profilePic" alt="avatar">
+                <img src="/uploads/avatars/{{ $user->avatar }}" class="m-x-auto img-fluid img-circle border profilePic" alt="avatar">
                 <h6 class="m-t-2">Upload a different photo</h6>
                 <label class="custom-file">
                     <input type="file" id="file" class="custom-file-input">
@@ -35,7 +35,7 @@
                 </ul>
                 <div class="tab-content p-b-3">
                     <div class="tab-pane active" id="internship">
-                        <h3> Heading</h3>
+                        <h3>{{$user->name}}</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                             Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
@@ -67,7 +67,7 @@
                             <div class="form-group row">
                                 <label class="col-lg-3 col-form-label form-control-label">First name</label>
                                 <div class="col-lg-9">
-                                    <input class="form-control" type="text" value='{{Auth::user()->name}}'>
+                                    <input class="form-control" type="text" value='{{$user->name}}'>
                                 </div>
                             </div>
                             <div class="form-group row">
