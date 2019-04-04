@@ -50,7 +50,14 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $profile = User::find($id);
+
+        if(auth()->user()->id !== $profile->id){
+            return redirect('/dashboard')->with('error', 'Unauthorized profile edit');
+        }
+
+        return view('Profile.edit')->with('profile', $profile);
+
     }
 
     /**
