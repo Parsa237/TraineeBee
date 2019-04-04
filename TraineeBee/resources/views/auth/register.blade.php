@@ -74,10 +74,25 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                         </div>
+                        <!-- Captcha Test -->
+                        {{--<form onsubmit="return checkform(this);">--}}
+                            {{--<br>--}}
+                            {{--<div class="capbox">--}}
 
+                                {{--<div id="CaptchaDiv"></div>--}}
+                                {{--<div class="capbox-inner">--}}
+                                    {{--Type the above number:<br>--}}
+
+                                    {{--<input type="hidden" id="txtCaptcha">--}}
+                                    {{--<input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>--}}
+
+                                {{--</div>--}}
+                            {{--</div>--}}
+                            {{--<br><br>--}}
+                        {{--</form>--}}
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" id="Submit_Button" class="btn btn-primary" style="background-color:orange ; color:white" disabled>
+                                <button type="submit" id="Submit_Button" class="btn importend" >
 
                                     {{ __('Register') }}
                                 </button>
@@ -85,25 +100,26 @@
                         </div>
                     </form>
 
-                    <!-- Captcha Test -->
-                    <div >
-                        <br>
-                        <div class="capbox">
 
-                            <div id="CaptchaDiv"></div>
+                    {{--<!-- Captcha Test -->--}}
+                    {{--<div >--}}
+                        {{--<br>--}}
+                        {{--<div class="capbox">--}}
 
-                            <div class="capbox-inner">
-                            Type the above number:<br>
+                            {{--<div id="CaptchaDiv"></div>--}}
 
-                            <input type="hidden" id="txtCaptcha">
-                            <input type="text" name="CaptchaInput" id="CaptchaInput" size="15" style="border-radius:2.5px;border:1px solid #dcdcdc;"><br>
-							<div style="height:30px;width:60px;background-color:orange;margin-top:5px;color:#fff;padding:5px;text-align:center;border-radius:2.5px;" onclick="test('click');">
-								Check
-							<div>
-                            </div> 
-                        </div>
-                        <br><br>
-                    </div>
+                            {{--<div class="capbox-inner">--}}
+                            {{--Type the above number:<br>--}}
+
+                            {{--<input type="hidden" id="txtCaptcha">--}}
+                            {{--<input type="text" name="CaptchaInput" id="CaptchaInput" size="15" style="border-radius:2.5px;border:1px solid #dcdcdc;"><br>--}}
+							{{--<div style="height:30px;width:60px;background-color:orange;margin-top:5px;color:#fff;padding:5px;text-align:center;border-radius:2.5px;" onclick="test('click');">--}}
+								{{--Check--}}
+							{{--<div>--}}
+                            {{--</div> --}}
+                        {{--</div>--}}
+                        {{--<br><br>--}}
+                    {{--</div>--}}
                 </div>
             </div>
         </div>
