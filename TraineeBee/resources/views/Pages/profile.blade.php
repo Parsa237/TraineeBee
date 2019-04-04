@@ -31,10 +31,14 @@
                     <li class="nav-item col-12 col-sm-auto text-md-left text-center">
                         <a onclick="openTab(event, 'skills')" class="nav-link text-muted tablinks">Skills</a>
                     </li>
+            @if(!Auth::guest())
+                @if(Auth::user()->id == $post->user_id)
                     <li class="nav-item col-12 col-sm-auto text-md-left text-center">
                         <a href="/profile/{{$user->id}}/edit" class="nav-link text-muted">Edit</a>
                     </li>
                 </ul>
+            @endif
+                @endif
                 <div class="tab-content p-b-3">
                     <div class="tab-pane active tabcontent" id="internship">
                         <h3>{{$user->name}}</h3>

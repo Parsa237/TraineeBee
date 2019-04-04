@@ -9,6 +9,11 @@ use App\User;
 
 class UserController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth', ['except' => 'show']);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -28,6 +33,11 @@ class UserController extends Controller
     public function show($id)
     {
         $profile = User::find($id);
+
+        if($id == NULL){
+            return redirect('/dashboard')->with('error', "User doesn't exist");
+        }
+
         return view('Pages.profile')->with('user', $profile);
     }
 
