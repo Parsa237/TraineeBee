@@ -32,7 +32,7 @@
                         <a onclick="openTab(event, 'skills')" class="nav-link text-muted tablinks">Skills</a>
                     </li>
             @if(!Auth::guest())
-                @if(Auth::user()->id == $post->user_id)
+                @if(Auth::user()->id == $user->id)
                     <li class="nav-item col-12 col-sm-auto text-md-left text-center">
                         <a href="/profile/{{$user->id}}/edit" class="nav-link text-muted">Edit</a>
                     </li>
