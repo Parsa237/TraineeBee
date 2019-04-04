@@ -29,7 +29,7 @@
                     <a class="secondPartNav" href="#info">Information</a>
                 </div>
                 <div class="col-2">
-                    <a class="secondPartNav" href="/login">Login/Register</a>
+                    <a class="secondPartNav" href="/login" id="login">Login/Register</a>
                 </div>
             </div>
         </div>
