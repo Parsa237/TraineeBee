@@ -25,7 +25,20 @@
   padding-bottom: 70px;
 }
 #info{
-  padding-top: 30px;
+padding-bottom: 70px;
+}
+#Filler{
+  width: 50vw;
+  height: 25vw;
   padding-bottom: 70px;
-  padding-left: 200px;
+}
+#Filler2{
+  width: 50vw;
+  height: 25vw;
+  padding-bottom: 70px;
+}
+#Filler3{
+  width: 50vw;
+  height: 25vw;
+  padding-bottom: 70px;
 }
