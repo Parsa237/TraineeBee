@@ -6,23 +6,35 @@
     background: #ffc107;
     color: white;
 }
+
 .importend2{
     color: orange;
 }
-.importend:hover{
+.importend2:hover{
     color: #ffc107;
 }
-.lBackground{
-    background-image: url("../../public/images/background.jpg");
-    background-blend-mode: lighten;
-}
-.importend3{
+/*.lBackground{*/
+    /*background-image: url("../../public/images/background.jpg");*/
+    /*background-blend-mode: lighten;*/
+/*}*/
+.importend3 {
     background: orange;
     color: white;
     text-decoration: white;
 }
-.importend3 a{
+.importend4{
+    background: orange;
+    color: white;
+    text-decoration: white;
+}
+.importend4 a{
     color: white;
     text-decoration: none;
+    border-bottom: 3px orange solid;
 
+}
+.importend4 a:hover{
+    text-decoration: wavy;
+    border-bottom: 3px white solid;
+    transition: 0.3s;
 }

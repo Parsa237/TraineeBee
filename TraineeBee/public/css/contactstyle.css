@@ -1,15 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Merriweather);
-
 *,
 *:before,
 *:after {
   box-sizing: border-box;
-}
-
-html,
-body {
-  font-family: "Merriweather", sans-serif;
-  padding: 1em;
 }
 
 h1 {
@@ -21,7 +13,7 @@ h1 {
 form {
   max-width: 600px;
   text-align: center;
-  margin: 20px auto;
+  margin: 12% auto;
 }
 
 input,
@@ -34,7 +26,6 @@ textarea {
   display: block;
   width: 100%;
   margin-top: 1em;
-  font-family: "Merriweather", sans-serif;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   resize: none;
 }
@@ -45,8 +36,12 @@ input:focus, textarea:focus {
 
 #input-submit {
   color: white;
-  background: black;
+  background: #ffc755;
   cursor: pointer;
+    transition: background .2s;
+}
+#input-submit:hover {
+    background: #f7af1d;
 }
 
 #input-submit:focus  {
