@@ -18,7 +18,7 @@
         </div>
 
 
-        <div class="row m-y-2">
+        <div class="row m-y-2 pt-5">
             <div class="col-lg-10 push-lg-2">
                 <ul class="nav nav-tabs">
 
@@ -120,26 +120,15 @@
                                 </div>
                             </div>
 
+
+
                             <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Programming Details</label>
+                                <label class="col-lg-3 col-form-label form-control-label">Our Skills</label>
                                 <div class="col-lg-9">
                                     <textarea class="form-control" rows="5" id="comment"></textarea>
                                 </div>
                             </div>
 
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Required Skills</label>
-                                <div class="col-lg-9">
-                                    <textarea class="form-control" rows="5" id="comment"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">General Info</label>
-                                <div class="col-lg-9">
-                                    <textarea class="form-control" rows="5" id="comment"></textarea>
-                                </div>
-                            </div>
 
                             <div class="form-group row">
                                 <label class="col-lg-3 col-form-label form-control-label"></label>
@@ -154,7 +143,8 @@
             </div>
 
         </div>
-        <div class="album py-5 bg-light">
+        <hr>
+        <div class="album py-5 bg-light ">
             <div class="container">
 
                 <div class="row">
@@ -165,10 +155,9 @@
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        <button type="button" class="btn btn-md btn-outline-secondary">View</button>
+
                                     </div>
-                                    <small class="text-muted">9 mins</small>
                                 </div>
                             </div>
                         </div>
