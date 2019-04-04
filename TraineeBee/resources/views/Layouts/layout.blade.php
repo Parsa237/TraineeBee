@@ -41,7 +41,7 @@
                 <div class="col-4"></div>
 
                 <div class="col-2">
-                    <a class="secondPartNav" href="#info">Information</a>
+                    <a class="secondPartNav" href="/#info">Information</a>
                 </div>
                 <div class="col-2">
                     <a class="secondPartNav" href="/login" id="login">Login/Register</a>
@@ -63,7 +63,7 @@
                 <div class="col-4">
                 </div>
                 <div class="col-2">
-                    <a class="secondPartNavDashboard" href="/profile">Profile</a>
+                    <a class="secondPartNav" href="/#info">Information</a>
                 </div>
                 <div class="col-2">
                     <li class="secondPartNavDashboard dropdown">
@@ -73,6 +73,7 @@
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/profile">Profile</a>
                             <a class="dropdown-item" href="/yourposts">Your posts</a>
                             <a class="dropdown-item" href="/posts/create">Create post</a>
                             <a class="dropdown-item" href="{{ route('logout') }}"

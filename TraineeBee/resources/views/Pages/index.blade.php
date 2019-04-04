@@ -30,7 +30,7 @@
         </div>
 
           <div id="AProject">
-              <h1>About the project</h1>
+              <h1 id="about">About the project</h1>
               <p>Trainee Bee
               <div class="smaller p-0">Join the Hive TM</div>
               Who are we?
