@@ -36,7 +36,7 @@
                     <a class="firstPartNav" href="/dashboard">Dashboard</a>
                 </div>
                 <div class="col-2">
-                    <a class="firstPartNav" href="/#about">About</a>
+                    <a class="firstPartNav" href="/#aboutLink">About</a>
                 </div>
                 <div class="col-4"></div>
 
@@ -58,7 +58,7 @@
                     <a class="firstPartNav" href="/dashboard">Dashboard</a>
                 </div>
                 <div class="col-2">
-                    <a class="firstPartNav" href="/#about">About</a>
+                    <a class="firstPartNav" href="/#aboutLink">About</a>
                 </div>
                 <div class="col-4">
                 </div>

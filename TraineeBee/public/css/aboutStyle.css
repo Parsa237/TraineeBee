@@ -12,33 +12,56 @@
 }
 
 #WelcomeMessage{
-  float: left;
-  width: 750px;
-  padding-top: 20px;
-  padding-bottom: 70px;
+    float: left;
+    width: 750px;
+    padding-top: 0;
+    padding-bottom: 10px;
+    padding-left: 0;
+
 }
 #AProject{
-  float: left;
-  padding-bottom: 70px;
+    float: left;
+    padding-bottom: 0;
+    padding-left: 0;
 }
 #AUs{
-  padding-bottom: 70px;
+    padding-bottom: 0;
+    padding-left: 0;
+
 }
 #info{
-padding-bottom: 70px;
+    padding-left: 0;
 }
 #Filler{
   width: 50vw;
   height: 25vw;
   padding-bottom: 70px;
+    padding-left: 0;
+
 }
 #Filler2{
   width: 50vw;
   height: 25vw;
   padding-bottom: 70px;
+        padding-left: 0;
+
 }
 #Filler3{
   width: 50vw;
   height: 25vw;
   padding-bottom: 70px;
+        padding-left: 0;
+
+}
+#WelcomeMessage a{
+    color: orange;
+}
+
+#infoContent{
+    padding-bottom: 40px;
+    padding-left: 0;
+}
+
+#welcome{
+    padding-left: 0;
 }
