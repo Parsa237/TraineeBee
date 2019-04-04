@@ -14,8 +14,7 @@
 
 </head>
 <body>
-<a class="logoNav" href="/"><img id="logo" src="{{asset('images/banner_logo.png')}}" alt="logo"
-                                 href="/home"></a>
+<a class="logoNav" href="/"><img id="logo" src="{{asset('images/banner_logo.png')}}" alt="logo" href="/home"></a>
 <div class="background">
     @guest
         <div class="container-fluid nav pr-0 pt-5">
@@ -27,7 +26,7 @@
                     <a class="firstPartNav" href="/#about">About</a>
                 </div>
                 <div class="col-4"></div>
-
+                
                 <div class="col-2">
                     <a class="secondPartNav" href="#info">Information</a>
                 </div>
@@ -36,12 +35,12 @@
                 </div>
             </div>
         </div>
-
+    <a class="logoNav" href="/"><img id="logo" src="{{asset('images/banner_logo.png')}}" alt="logo" href="/home"></a>
     @else
         <div class="container-fluid nav pr-0 pt-5">
             <div class="row navRow justify-content-center pl-4 pr-4">
                 <div class="col-2">
-
+                    
                     <a class="firstPartNav" href="/dashboard">Dashboard</a>
                 </div>
                 <div class="col-2">
@@ -66,6 +65,8 @@
                                onclick="event.preventDefault();
                                                              document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
+                                </a>
+
                             </a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 @csrf
@@ -75,10 +76,9 @@
                 </div>
             </div>
         </div>
-        <div class="hexagon">
-            <a class="logoNav" href="/"><img id="logo" src="{{asset('images/banner_logo.png')}}" alt="logo"
-                                             href="/home"></a>
-        </div>
+    <div class="hexagon">
+        <a class="logoNav" href="/"><img id="logo" src="{{asset('images/banner_logo.png')}}" alt="logo" href="/home"></a>
+    </div>
     @endguest
 
 
@@ -126,8 +126,6 @@
                     </ul>
                 </div>
                 <!-- Grid column -->
-
-                <!-- Grid column -->
                 <div class="col-md-3 mb-md-0 mb-3">
 
                     <!-- Links -->
@@ -140,7 +138,6 @@
                         <li>
                             <a href="#!">Contact us!</a>
                         </li>
-
                     </ul>
 
                 </div>
@@ -150,7 +147,6 @@
             <!-- Grid row -->
 
         </div>
-
         <!-- Footer Links -->
 
         <!-- Copyright -->
@@ -158,7 +154,6 @@
             Traineebee
         </div>
     </footer>
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -199,11 +194,11 @@
         $(window).scroll(function () {
             if ($(this).scrollTop() > window.innerHeight - 250) { // this refers to window
                 $("#stingButtonImg").css({
-                    "position": "sticky"
+                    "display": "none",
+                    "backgroud-color": "pink"
                     } );
             }
         });
     </script>
-</div>
 </body>
 </html>

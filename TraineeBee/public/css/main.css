@@ -97,6 +97,12 @@
     text-align: center;
     word-break:break-word;
 } 
+.DashDesc{
+    font-size: 20px;
+    font-family:"Arial Black", Gadget, sans-serif;
+    text-align: center;
+    word-break:break-word;
+} 
 
 .grid-container {
     display:grid;
