@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('headerimage')->default('defaultheader.png');
             $table->string('website')->default('');
             $table->string('address')->default('');
-            $table->string('generalinfo')->default('');
+            $table->longText('generalinfo')->nullable();
             $table->longText('internshipinfo')->nullable();
             $table->longText('skills')->nullable();
             $table->rememberToken();

@@ -55,6 +55,7 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $user = User::find($id);
 
 
         if($request->hasFile('avatar')) {
@@ -84,8 +85,12 @@ class UserController extends Controller
         $profile->generalinfo = $request->input('generalinfo');
         $profile->internshipinfo = $request->input('internshipinfo');
         $profile->skills = $request->input('skills');
-        $profile->headerimage = $headerimagenameToStore;
-        $profile->avatar = $avatarfilenameToStore;
+        if($request->hasFile('avatar') && $request->file('avatar')->getClientOriginalName() !== 'default.png') {
+            $profile->avatar = $avatarfilenameToStore;
+        }
+        if($request->hasFile('headerimage') && $request->file('headerimage')->getClientOriginalName() !== 'default.png') {
+            $profile->headerimage = $headerimagenameToStore;
+        }
         $profile->save();
         return redirect('/dashboard')->with('success', 'Post Updated');
     }

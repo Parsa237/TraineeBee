@@ -13,7 +13,7 @@
                 <h5 class="m-t-2">{{$user->name}}</h5>
         </div>
         <div class="col-md-6 mt-5">
-            <h2>Why we are the BEST</h2>
+            <h2>General Information</h2>
             <br>
             <p>
                 {{$user->generalinfo}}
@@ -36,15 +36,15 @@
                     </li>
                 </ul>
                 <div class="tab-content p-b-3">
-                    <div class="tab-pane tabcontent" id="internship">
+                    <div class="tab-pane active tabcontent" id="internship">
                         <h3>{{$user->name}}</h3>
                         <p>{{$user->internshipinfo}}</p>
                     </div>
                 </div>
                 <div class="tab-content p-b-3">
-                    <div class="tab-pane active tabcontent" id="skills">
+                    <div class="tab-pane tabcontent" id="skills">
                         <h3>{{$user->name}}</h3>
-                        <p>{{$user->internshipinfo}}</p>
+                        <p>{{$user->skills}}</p>
                     </div>
                 </div>
             </div>
