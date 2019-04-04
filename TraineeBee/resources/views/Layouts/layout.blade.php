@@ -25,7 +25,7 @@
                     <a class="firstPartNav" href="/#about">About</a>
                 </div>
                 <div class="col-4"></div>
-
+                
                 <div class="col-2">
                     <a class="secondPartNav" href="#info">Information</a>
                 </div>
@@ -34,12 +34,12 @@
                 </div>
             </div>
         </div>
-
+    <a class="logoNav" href="/"><img id="logo" src="{{asset('images/banner_logo.png')}}" alt="logo" href="/home"></a>
     @else
         <div class="container-fluid nav pr-0 pt-5">
             <div class="row navRow justify-content-center pl-4 pr-4">
                 <div class="col-2">
-
+                    
                     <a class="firstPartNav" href="/dashboard">Dashboard</a>
                 </div>
                 <div class="col-2">
@@ -64,7 +64,7 @@
                                onclick="event.preventDefault();
                                                              document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
-                            </a>
+                                </a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 @csrf
                             </form>
@@ -73,10 +73,9 @@
                 </div>
             </div>
         </div>
-        <div class="hexagon">
-            <a class="logoNav" href="/"><img id="logo" src="{{asset('images/banner_logo.png')}}" alt="logo"
-                                             href="/home"></a>
-        </div>
+    <div class="hexagon">
+        <a class="logoNav" href="/"><img id="logo" src="{{asset('images/banner_logo.png')}}" alt="logo" href="/home"></a>
+    </div>
     @endguest
 
 
@@ -156,6 +155,75 @@
         </div>
     </footer>
 </div>
+        <footer class="page-footer font-small blue pt-4 footer">
+
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
+
+                        <!-- Content -->
+                        <h5 class="text-uppercase">TraineeBee</h5>
+                        <p>Feel free to contact us if you have any suggestions about our page. </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none pb-3">
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+
+                        <!-- Links -->
+                        <h5 class="text-uppercase">headings</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="./#about">About us<a>
+                            </li>
+                            <li>
+                                <a href="./#info">Information</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+
+                        <!-- Links -->
+                        <h5 class="text-uppercase">Contact</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">Login</a>
+                            </li>
+                            <li>
+                                <a href="#!">Contact us!</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Footer Links -->
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3 ">© 2018 Copyright:
+                Traineebee
+            </div>
+        </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -193,14 +261,40 @@
         });
 
 
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > window.innerHeight - 250) { // this refers to window
-                $("#stingButtonImg").css({
-                    "display": "none",
-                    "backgroud-color": "pink"
-                    } );
-            }
-        });
-    </script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script>
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 10) { // this refers to window
+            $("#stingButtonImg").addClass("stingAnimation");
+            $("#stingButtonImg").removeClass("stingAnimationBack");
+            $("#stingButtonImg").click(function () {
+                window.scrollTo(0, 0);
+            });
+        } else {
+            $("#stingButtonImg").addClass("stingAnimationBack");
+            $("#stingButtonImg").removeClass("stingAnimation");
+            $("#stingButtonImg").click(function () {
+                window.scrollTo(0, 4500);
+            });
+        }
+    });
+    $(window).ready(function () {
+        $i = 0;
+        if ($i < 1) {
+            $("#stingButtonImg").click(function () {
+                window.scrollTo(0, 4500);
+            });
+            $i++;
+        }
+    });
+</script>
 </body>
 </html>
