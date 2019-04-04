@@ -241,4 +241,5 @@
     </div>
     <hr>
 
+    <img id="stingButtonImg" src="images/stingButton2.png" alt="" class="stingAnimationBack">
 @endsection
