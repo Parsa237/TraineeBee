@@ -1,8 +1,7 @@
 .background {
-    /*background-image: linear-gradient(to right, #ffd154, #e3a000);*/
+    /*background-image: linear-gradient(to right, #ffd154, #e3a000);*!*/
     background-color: #f5f8fa;
     width: 100%;
-    height: 150vh;
     font-family: 'Lilita One', cursive;
     color: #323232;
 }
@@ -11,6 +10,7 @@
 
 @keyframes stingRotate {
     0% {
+        width: 3vw;
         position: fixed;
         left: 48.5vw;
     }
@@ -30,6 +30,7 @@
         width: 3vw;
     }
     100% {
+        width: 3vw;
         position: fixed;
         left: 48.5vw;
     }
@@ -63,20 +64,54 @@
 }
 
 .textUserName:hover {
-    color: #FFC755;
+    color: black;
 }
 .HeaderFontDash{
     color:#222426
 }
-.DescHeaderDash{
+.DashTitle{
     font-size: 20px;
     font-family:"Arial Black", Gadget, sans-serif;
+} 
+.DashDesc{
+    font-size: 20px;
+    font-family:"Arial Black", Gadget, sans-serif;
+    text-align: center;
+    word-break:break-word;
 } 
 
 .grid-container {
     display:grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 20% 80%;
+    grid-column-gap: 2.5%;
 }
 a:hover{
     color: #FFC755;
+}
+.DashBorder{
+   border-radius: 12px;
+  border: 2px solid;
+  padding: 80%;
+    margin:2.5%;
+}
+.DashBorder2TEST{
+    border-radius: 12px;
+  border: 2px solid;
+  padding: 20px;
+    margin-right: auto;
+}
+#about {
+    margin-top: 20vw;
+}
+.footer{
+    background-color: #ffc107;
+    width: 100%;
+}
+.footer a{
+    color: black;
+}
+.dashboarda{
+    margin-top:15%;
+    margin-left: center;
+    resize: both;
 }

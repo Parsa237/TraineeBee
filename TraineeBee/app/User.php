@@ -27,9 +27,9 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    protected $attributes = [
-        'status' => 0,
-        'isAdmin' => false
-    ];
+
+    public function posts(){
+        return $this->hasMany('App\Post');
+    }
 
 }
