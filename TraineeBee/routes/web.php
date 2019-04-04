@@ -22,6 +22,7 @@ Route::get('/admin', 'PagesController@adminpanel');
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::get('/posts/create', 'PostsController@create');
 Route::get('/yourposts', 'HomeController@index');
+Route::get('/contact', 'PagesController@contact');
 Auth::routes();
 
 Route::resource('posts', 'PostsController');
