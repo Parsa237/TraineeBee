@@ -73,10 +73,8 @@
                 </div>
             </div>
         </div>
-        <div class="hexagon">
-            <a class="logoNav" href="/"><img id="logo" src="{{asset('images/banner_logo.png')}}" alt="logo"
-                                             href="/home"></a>
-        </div>
+
+
     @endguest
 
 
@@ -126,6 +124,26 @@
                 <!-- Grid column -->
 
                 <!-- Grid column -->
+
+                <!-- Grid column -->
+
+                {{--<div class="col-md-3 mb-md-0 mb-3">--}}
+
+                    {{--<form class="cf" action="contactform.php" method="post">--}}
+                        {{--<div class="half left cf">--}}
+                            {{--<input type="text" id="input-name" placeholder="Name" name="name">--}}
+                            {{--<input type="email" id="input-email" placeholder="Email address" name="email">--}}
+                            {{--<input type="text" id="input-subject" placeholder="Subject" name="subject">--}}
+                        {{--</div>--}}
+                        {{--<div class="half right cf">--}}
+                            {{--<textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>--}}
+                        {{--</div>--}}
+                        {{--<input type="submit" value="Submit" id="input-submit">--}}
+                    {{--</form>--}}
+
+                {{--</div>--}}
+                
+                <!-- Grid column -->
                 <div class="col-md-3 mb-md-0 mb-3">
 
                     <!-- Links -->
@@ -133,6 +151,11 @@
 
                     <ul class="list-unstyled">
                         <li>
+                            <a href="./#about">Mail us<a>
+                        </li>
+                        <li>
+                            <a href="./#info">Information</a>
+                        </li>
                             <a href="#!">Login</a>
                         </li>
                         <li>
@@ -141,6 +164,7 @@
 
                     </ul>
 
+                    </ul>
                 </div>
                 <!-- Grid column -->
 
