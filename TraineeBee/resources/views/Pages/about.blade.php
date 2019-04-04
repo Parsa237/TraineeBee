@@ -15,13 +15,34 @@
 
             <!-- Styles -->
             <link href="http://127.0.0.1:8000/css/main.css" rel="stylesheet" type="text/css">
+            <link href="http://127.0.0.1:8000/css/aboutStyle.css" rel="stylesheet" type="text/css">
                 </head>
         <body>
                 <div class="background">
 
 
             <div class="flex-center position-ref full-height">
-            </div>
+            </div>  <div class="col-md-4 Pictures float-right" >
+                        <!-- first picture-->
+                        <img src="{{asset('images/placeholder.png')}}" alt="This a picture of the Group!  The dutch and The English peeps :D">
+
+                        <div class="col-md-6 Blank">wejhuirh</div>
+                        <div class="col-md-6 Hexagon ">
+
+                        </div>
+
+                        <!-- second picture-->
+                        <div class="col-md-6 Hexagon">
+
+                        </div>
+                        <div class="col-md-6 Blank ">ehwfeuife</div>
+                        <div class="col-md-6 Blank"></div>
+                        <!-- third picture-->
+                        <div class="col-md-6 Hexagon float-right">
+                        </div>
+                        <div class="col-md-6 Blank">weuryu9wi</div>
+
+                    </div>
             <div class="col-md-8 No_Margin">
                  <h1>About the Project</h1>
                     <p>Trainee Bee <div class="smaller">Join the Hive TM</div> is an Exange Program between the Netherlands and England for four weeks in total.<br>
@@ -37,28 +58,7 @@
                     And to Help Students College and Companies their way through this new way.
                     </p>
             </div>
-            <div class="col-md-4 Pictures">
-            <!-- first picture-->
-            <img src="{{asset('images/placeholder.png')}}" alt="This a picture of the Group!  The dutch and The English peeps :D">
 
-            <div class="col-md-6 Blank"></div>
-            <div class="col-md-6 Hexagon">
-                //Put picture here
-            </div>
-
-            <!-- second picture-->
-            <div class="col-md-6 Hexagon">
-                //Put picture here
-            </div>
-            <div class="col-md-6 Blank "></div>
-            <div class="col-md-6 Blank "></div>
-
-            <!-- third picture-->
-            <div class="col-md-6 Hexagon">
-                //Put picture here
-            </div>
-
-        </div>
         <div class="col-md-12 Picture">
             <img src="{{asset('images/placeholder.png')}}" alt="This a picture of the Group!  The dutch and The English peeps :D">
         </div>
