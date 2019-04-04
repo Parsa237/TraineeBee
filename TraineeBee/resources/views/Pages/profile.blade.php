@@ -18,7 +18,7 @@
         </div>
 
 
-        <div class="row m-y-2">
+        <div class="row m-y-2 pt-5">
             <div class="col-lg-10 push-lg-2">
                 <ul class="nav nav-tabs">
 
@@ -29,9 +29,13 @@
                     <li class="nav-item col-12 col-sm-auto text-md-left text-center">
                         <a href="" data-target="#skills" data-toggle="tab" class="nav-link text-muted">Skills</a>
                     </li>
+            @if(!Auth::guest())
+                @if(Auth::user()->id == $user->id)
                     <li class="nav-item col-12 col-sm-auto text-md-left text-center">
-                        <a href="" data-target="#edit" data-toggle="tab" class="nav-link text-muted">Edit</a>
+                        <a href="/profile/{{$user->id}}/edit" class="nav-link text-muted">Edit</a>
                     </li>
+                @endif
+            @endif
                 </ul>
                 <div class="tab-content p-b-3">
                     <div class="tab-pane active" id="internship">
@@ -61,6 +65,8 @@
                     <div class="tab-pane active" id="generallInfo">
                         generallInfo Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi.
                     </div>
+<<<<<<< HEAD
+=======
                     <div class="tab-pane" id="edit">
                         <h4 class="m-y-2">Edit Profile</h4>
                         <form role="form">
@@ -120,26 +126,15 @@
                                 </div>
                             </div>
 
+
+
                             <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Programming Details</label>
+                                <label class="col-lg-3 col-form-label form-control-label">Our Skills</label>
                                 <div class="col-lg-9">
                                     <textarea class="form-control" rows="5" id="comment"></textarea>
                                 </div>
                             </div>
 
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Required Skills</label>
-                                <div class="col-lg-9">
-                                    <textarea class="form-control" rows="5" id="comment"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">General Info</label>
-                                <div class="col-lg-9">
-                                    <textarea class="form-control" rows="5" id="comment"></textarea>
-                                </div>
-                            </div>
 
                             <div class="form-group row">
                                 <label class="col-lg-3 col-form-label form-control-label"></label>
@@ -150,11 +145,12 @@
                             </div>
                         </form>
                     </div>
+>>>>>>> 4656670b932c768ca9357f5f13037d387f5f9056
                 </div>
             </div>
-
         </div>
-        <div class="album py-5 bg-light">
+        <hr>
+        <div class="album py-5 bg-light ">
             <div class="container">
 
                 <div class="row">
@@ -165,10 +161,9 @@
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        <button type="button" class="btn btn-md btn-outline-secondary">View</button>
+
                                     </div>
-                                    <small class="text-muted">9 mins</small>
                                 </div>
                             </div>
                         </div>
