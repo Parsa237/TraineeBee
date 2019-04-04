@@ -2,7 +2,7 @@
 @extends('Layouts.layout')
 @section('content')
     <head><link href="http://127.0.0.1:8000/css/aboutStyle.css" rel="stylesheet" type="text/css"></head>
-    <img id="stingButtonImg" src="images/stingButton2.png" alt="">
+
     <h1 id="welcome">Welcome to TraineeBee!</h1>
 
 
@@ -36,7 +36,7 @@ Not only do
             <div class="col-md-6 Blank ">ehwfeuife</div>
             <div class="col-md-6 Blank"></div>
             <!-- third picture-->
-           
+
             <div class="col-md-6 Blank">weuryu9wi</div>
 
         </div>
@@ -68,5 +68,5 @@ Our main goal is to promote internships, programs that while in education, stude
         Information
     </h1>
 
-
+    <img id="stingButtonImg" src="images/stingButton2.png" alt="">
 @endsection
