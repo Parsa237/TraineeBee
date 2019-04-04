@@ -113,7 +113,7 @@
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="./#about">About us</a>
+                            <a href="./#about">About us<a>
                         </li>
                         <li>
                             <a href="./#info">Information</a>
@@ -123,6 +123,7 @@
                 </div>
                 <!-- Grid column -->
 
+<<<<<<< HEAD
                         <!-- Links -->
                         <form class="cf" action="#" method="post">
                             <div class="half left cf">
@@ -135,6 +136,21 @@
                             </div>
                             <input type="submit" value="Submit" id="input-submit">
                         </form>
+=======
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Contact</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Login</a>
+                        </li>
+                        <li>
+                            <a href="#!">Contact us!</a>
+                        </li>
+>>>>>>> 4b895a936625af9fbbf15a5d5386229854f3d383
 
                     </ul>
 
@@ -145,7 +161,6 @@
             <!-- Grid row -->
 
         </div>
-
         <!-- Footer Links -->
 
         <!-- Copyright -->
@@ -153,7 +168,7 @@
             Traineebee
         </div>
     </footer>
-
+</div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -194,11 +209,11 @@
         $(window).scroll(function () {
             if ($(this).scrollTop() > window.innerHeight - 250) { // this refers to window
                 $("#stingButtonImg").css({
-                    "position": "sticky"
+                    "display": "none",
+                    "backgroud-color": "pink"
                     } );
             }
         });
     </script>
-</div>
 </body>
 </html>
