@@ -148,6 +148,7 @@
             <!-- Grid row -->
 
         </div>
+
         <!-- Footer Links -->
 
         <!-- Copyright -->
@@ -155,7 +156,7 @@
             Traineebee
         </div>
     </footer>
-</div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -196,11 +197,11 @@
         $(window).scroll(function () {
             if ($(this).scrollTop() > window.innerHeight - 250) { // this refers to window
                 $("#stingButtonImg").css({
-                    "display": "none",
-                    "backgroud-color": "pink"
+                    "position": "sticky"
                     } );
             }
         });
     </script>
+</div>
 </body>
 </html>
