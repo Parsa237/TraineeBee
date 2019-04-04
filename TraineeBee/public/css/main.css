@@ -57,6 +57,7 @@
     position: fixed;
     left: 48.5vw;
     bottom: 2vw;
+    z-index: 1;
 }
 
 .stingAnimation {
