@@ -52,6 +52,11 @@ class PostsController extends Controller
     public function show($id)
     {
         $post = Post::find($id);
+
+        if($post == NULL){
+            return redirect('/dashboard')->with('error', "Page doesn't exist");
+        }
+
         return view('Posts.show')->with('post', $post);
     }
 
