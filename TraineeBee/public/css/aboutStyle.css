@@ -1,14 +1,13 @@
 
 .Hexagon{
-    background-image:url("../images/stingButton.png");
+    background-image:url("../images/Picture_hexagon.png");
     background-repeat: no-repeat;
     background-size: cover;
     height:200px;
-    width:100%;
+    width:300px;
 }
 .Blank{
+ display: none;
  width:100%;
 }
-.No_Margin{
-    margin: 0;
-}
+

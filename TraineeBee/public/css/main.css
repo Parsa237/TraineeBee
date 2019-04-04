@@ -22,6 +22,18 @@
     }
 }
 
+@keyframes stingAnimationStopBottom {
+    0% {
+
+    }
+    100% {
+        position: absolute;
+        left: 85vw;
+        width: 3vw;
+        bottom: calc(100vw - 250px);
+    }
+}
+
 @keyframes stingRotateBack {
     0% {
         position: fixed;
@@ -54,6 +66,12 @@
 }
 .stingAnimationBack {
     animation-name: stingRotateBack;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.stingAnimationStopBottom{
+    animation-name: stingAnimationStopBottom;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
