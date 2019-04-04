@@ -5,7 +5,7 @@
 @section('content')
     <div class="hexagon hexagon1"><div class="hexagon-in1"><div class="hexagon-in2"></div></div></div>
     <div class="container border-top">
-        <img src="/uploads/avatars/{{$user->headerimage}}" class="m-x-auto img-fluid img-circle" alt="avatar">
+        <img src="storage/uploads/headerimage/{{$user->headerimage}}" class="m-x-auto img-fluid img-circle" alt="avatar">
 
         <div class="row m-y-2" style="margin: -125px 0 0 125px">
             <div class="col-lg-12 pull-lg-12 text-xs-center">

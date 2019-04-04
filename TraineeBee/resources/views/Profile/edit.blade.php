@@ -51,6 +51,17 @@
                     <label class="col-lg-3 col-form-label form-control-label">Avatar</label>
                     <div class="col-lg-9">
                         <input type="file" name="avatar">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-lg-3 col-form-label form-control-label">Header image</label>
+                    <div class="col-lg-9">
+                        <input type="file" name="headerimage">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-lg-3 col-form-label form-control-label"></label>
+                    <div class="col-lg-9">
                         <input name="_method" type="hidden" value="PATCH">
                         <button class="btn btn-primary" type="submit">Submit</button>
                     </div>

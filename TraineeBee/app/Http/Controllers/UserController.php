@@ -61,13 +61,22 @@ class UserController extends Controller
             $filenameWithExt = $request->file('avatar')->getClientOriginalName();
             $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
             $extension = $request->file('avatar')->getClientOriginalExtension();
-            $filenameToStore = $filename . '_' . time() . '.' . $extension;
-            $path = $request->file('avatar')->storeAs('public/uploads/avatars', $filenameToStore);
+            $avatarfilenameToStore = $filename . '_' . time() . '.' . $extension;
+            $path = $request->file('avatar')->storeAs('public/uploads/avatars', $avatarfilenameToStore);
         }else{
-            $filenameToStore = 'default.png';
+            $avatarfilenameToStore = 'default.png';
         }
 
-//        var_dump($path);
+        if($request->hasFile('headerimage')) {
+            $filenameWithExt = $request->file('headerimage')->getClientOriginalName();
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            $extension = $request->file('headerimage')->getClientOriginalExtension();
+            $headerimagenameToStore = $filename . '_' . time() . '.' . $extension;
+            $path = $request->file('headerimage')->storeAs('public/uploads/headerimage', $headerimagenameToStore);
+        }else{
+            $headerimagenameToStore = 'default.png';
+        }
+
 
         $profile = User::find($id);
         $profile->website = $request->input('website');
@@ -75,7 +84,8 @@ class UserController extends Controller
         $profile->generalinfo = $request->input('generalinfo');
         $profile->internshipinfo = $request->input('internshipinfo');
         $profile->skills = $request->input('skills');
-        $profile->avatar = $filenameToStore;
+        $profile->headerimage = $headerimagenameToStore;
+        $profile->avatar = $avatarfilenameToStore;
         $profile->save();
         return redirect('/dashboard')->with('success', 'Post Updated');
     }
