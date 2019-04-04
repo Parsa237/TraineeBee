@@ -65,8 +65,6 @@
                     <div class="tab-pane active" id="generallInfo">
                         generallInfo Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi.
                     </div>
-<<<<<<< HEAD
-=======
                     <div class="tab-pane" id="edit">
                         <h4 class="m-y-2">Edit Profile</h4>
                         <form role="form">
@@ -145,7 +143,6 @@
                             </div>
                         </form>
                     </div>
->>>>>>> 4656670b932c768ca9357f5f13037d387f5f9056
                 </div>
             </div>
         </div>
