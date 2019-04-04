@@ -29,9 +29,13 @@
                     <li class="nav-item col-12 col-sm-auto text-md-left text-center">
                         <a href="" data-target="#skills" data-toggle="tab" class="nav-link text-muted">Skills</a>
                     </li>
+            @if(!Auth::guest())
+                @if(Auth::user()->id == $user->id)
                     <li class="nav-item col-12 col-sm-auto text-md-left text-center">
-                        <a href="" data-target="#edit" data-toggle="tab" class="nav-link text-muted">Edit</a>
+                        <a href="/profile/{{$user->id}}/edit" class="nav-link text-muted">Edit</a>
                     </li>
+                @endif
+            @endif
                 </ul>
                 <div class="tab-content p-b-3">
                     <div class="tab-pane active" id="internship">
@@ -61,84 +65,8 @@
                     <div class="tab-pane active" id="generallInfo">
                         generallInfo Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi.
                     </div>
-                    <div class="tab-pane" id="edit">
-                        <h4 class="m-y-2">Edit Profile</h4>
-                        <form role="form">
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">First name</label>
-                                <div class="col-lg-9">
-                                    <input class="form-control" type="text" value='{{$user->name}}'>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Last name</label>
-                                <div class="col-lg-9">
-                                    <input class="form-control" type="text" value="Bishop">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Email</label>
-                                <div class="col-lg-9">
-                                    <input class="form-control" type="email" value="email@gmail.com">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Company</label>
-                                <div class="col-lg-9">
-                                    <input class="form-control" type="text" value="Google">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Website</label>
-                                <div class="col-lg-9">
-                                    <input class="form-control" type="url" value="www.google.com">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Address</label>
-                                <div class="col-lg-6">
-                                    <input class="form-control" type="text" value="Wallstreet" placeholder="Street">
-                                </div>
-                                <div class="col-lg-3">
-                                    <input class="form-control" type="text" value="267" placeholder="Number">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label"></label>
-                                <div class="col-lg-6">
-                                    <input class="form-control" type="text" value="New York" placeholder="City">
-                                </div>
-                                <div class="col-lg-3">
-                                    <input class="form-control" type="text" value="dfg21564" placeholder="Postal Code">
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Internship Details </label>
-                                <div class="col-lg-9">
-                                    <textarea class="form-control" rows="5" id="comment"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Our Skills</label>
-                                <div class="col-lg-9">
-                                    <textarea class="form-control" rows="5" id="comment"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label"></label>
-                                <div class="col-lg-9">
-                                    <input type="reset" class="btn btn-secondary" value="Cancel">
-                                    <input type="button" class="btn btn-primary" value="Save Changes">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
                 </div>
             </div>
-
         </div>
     </div>
     <hr>
