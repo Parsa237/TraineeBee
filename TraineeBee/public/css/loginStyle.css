@@ -1,0 +1,28 @@
+.importend{
+    background: orange;
+    color: white;
+}
+.importend:hover{
+    background: #ffc107;
+    color: white;
+}
+.importend2{
+    color: orange;
+}
+.importend:hover{
+    color: #ffc107;
+}
+.lBackground{
+    background-image: url("../../public/images/background.jpg");
+    background-blend-mode: lighten;
+}
+.importend3{
+    background: orange;
+    color: white;
+    text-decoration: white;
+}
+.importend3 a{
+    color: white;
+    text-decoration: none;
+
+}

@@ -76,3 +76,16 @@
     align-content: center;
     width: 20vw;
 }
+
+/*#login {*/
+    /*background-color: #ffc755;*/
+    /*border: 2px solid #323232;*/
+    /*border-radius: 6px;*/
+    /*padding: 4%;*/
+/*}*/
+
+#login:hover{
+    background-color: #323232;
+    color: #f5f8fa;
+}
+
