@@ -29,19 +29,14 @@ Not only do
             <img src="{{asset('images/placeholder.png')}}" alt="This a picture of the Group!  The dutch and The English peeps :D">
 
             <div class="col-md-6 Blank">wejhuirh</div>
-            <div class="col-md-6 Hexagon ">
 
-            </div>
 
             <!-- second picture-->
-            <div class="col-md-6 Hexagon">
 
-            </div>
             <div class="col-md-6 Blank ">ehwfeuife</div>
             <div class="col-md-6 Blank"></div>
             <!-- third picture-->
-            <div class="col-md-6 Hexagon float-right">
-            </div>
+           
             <div class="col-md-6 Blank">weuryu9wi</div>
 
         </div>
