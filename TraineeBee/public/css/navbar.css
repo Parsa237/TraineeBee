@@ -38,7 +38,7 @@
 .secondPartNavDashboard:hover {
     color: #323232;
     border-bottom: 3px solid black;
-    text-decoration: none;
+    text-decoration: none;  
 
 }
 
@@ -84,8 +84,4 @@
     /*padding: 4%;*/
 /*}*/
 
-#login:hover{
-    background-color: #323232;
-    color: #f5f8fa;
-}
 
