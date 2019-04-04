@@ -99,9 +99,6 @@
     <div class="container">
         @yield('content')
     </div>
-    <div class="container">
-
-    </div>
 
     <footer class="page-footer font-small blue pt-4 footer">
 
@@ -194,7 +191,6 @@
             Traineebee
         </div>
     </footer>
-
 </div>
 <!-- Footer Links -->
 <script>
@@ -204,13 +200,17 @@
             $("#stingButtonImg").addClass("stingAnimation");
             $("#stingButtonImg").removeClass("stingAnimationBack");
             $("#stingButtonImg").click(function () {
-                window.scrollTo(0, 0);
+                window.scrollTo({
+                    left: 0, top:  0, behavior: 'smooth'
+                });
             });
         } else {
             $("#stingButtonImg").addClass("stingAnimationBack");
             $("#stingButtonImg").removeClass("stingAnimation");
             $("#stingButtonImg").click(function () {
-                window.scrollTo(0, 4500);
+                window.scrollTo({
+                    left: 0, top:  4500, behavior: 'smooth'
+                });
             });
         }
     });
@@ -218,14 +218,18 @@
         $i = 0;
         if ($i < 1) {
             $("#stingButtonImg").click(function () {
-                window.scrollTo(0, 4500);
+                window.scrollTo({
+                    left: 0, top:  4500, behavior: 'smooth'
             });
-            $i++;
         }
-        if ($isReady > 0) {
-            $(document.body).append('<img id=\'stingButtonImg\' src=\'images/stingButton2.png\' alt=\'\'>');
-        }
-    });
+    );
+    $i++;
+    }
+    if ($isReady > 0) {
+        $(document.body).append('<img id=\'stingButtonImg\' src=\'images/stingButton2.png\' alt=\'\'>');
+    }
+    })
+    ;
 
 
 </script>
