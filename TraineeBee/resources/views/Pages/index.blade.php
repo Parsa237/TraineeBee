@@ -27,24 +27,6 @@
     <div class="background">
 
 
-        <div class="flex-center position-ref full-height">
-        </div>
-        <div class="col-md-4 Pictures float-right">
-            <!-- first picture-->
-            <img src="{{asset('images/placeholder.png')}}"
-                 alt="This a picture of the Group!  The dutch and The English peeps :D">
-
-            <div class="col-md-6 Blank">wejhuirh</div>
-
-
-            <!-- second picture-->
-
-            <div class="col-md-6 Blank ">ehwfeuife</div>
-            <div class="col-md-6 Blank"></div>
-            <!-- third picture-->
-
-            <div class="col-md-6 Blank">weuryu9wi</div>
-
         </div>
         <div class="col-md-8 p-0 No_Margin">
             <h1>About the project</h1>
