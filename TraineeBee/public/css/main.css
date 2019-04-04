@@ -57,6 +57,7 @@
     position: fixed;
     left: 48.5vw;
     bottom: 2vw;
+    z-index: 1;
 }
 
 .stingAnimation {
@@ -97,6 +98,12 @@
     text-align: center;
     word-break:break-word;
 } 
+.DashDesc{
+    font-size: 20px;
+    font-family:"Arial Black", Gadget, sans-serif;
+    text-align: center;
+    word-break:break-word;
+} 
 
 .grid-container {
     display:grid;
@@ -122,7 +129,7 @@ a:hover{
     margin-top: 20vw;
 }
 .footer{
-    background-color: #ffc107;
+    background-color: orange;
     width: 100%;
 }
 .footer a{

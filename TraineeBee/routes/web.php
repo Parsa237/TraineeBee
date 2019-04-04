@@ -18,10 +18,13 @@ Route::get('/about', 'PagesController@about');
 Route::get('/info', 'PagesController@CandCInfo');
 Route::get('/login', 'PagesController@login');
 Route::get('/contact', 'PagesController@contact');
+Route::get('/profile', 'UserController@index');
 Route::get('/admin', 'PagesController@adminpanel');
+Route::get('/home', function(){return view('home');});
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::get('/posts/create', 'PostsController@create');
 Route::get('/yourposts', 'HomeController@index');
+Route::get('/contact', 'PagesController@contact');
 Auth::routes();
 
 Route::resource('posts', 'PostsController');
