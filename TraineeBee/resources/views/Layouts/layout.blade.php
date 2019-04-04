@@ -73,6 +73,7 @@
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/profile">Profile</a>
                             <a class="dropdown-item" href="/yourposts">Your posts</a>
                             <a class="dropdown-item" href="/posts/create">Create post</a>
                             <a class="dropdown-item" href="{{ route('logout') }}"
