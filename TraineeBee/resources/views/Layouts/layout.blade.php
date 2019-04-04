@@ -166,7 +166,7 @@
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="./#about">Mail us<a>
+                            <a href="./#about">Mail us</a>
                         </li>
                         <li>
                             <a href="./#info">Information</a>
