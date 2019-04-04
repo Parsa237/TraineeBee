@@ -96,8 +96,8 @@
                             Type the above number:<br>
 
                             <input type="hidden" id="txtCaptcha">
-                            <input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>
-							<div style="height:30px;width:60px;background-color:orange;margin-top:5px;color:#fff;padding:5px;text-align:center;" onclick="test('click');">
+                            <input type="text" name="CaptchaInput" id="CaptchaInput" size="15" style="border-radius:2.5px;border:1px solid #dcdcdc;"><br>
+							<div style="height:30px;width:60px;background-color:orange;margin-top:5px;color:#fff;padding:5px;text-align:center;border-radius:2.5px;" onclick="test('click');">
 								Check
 							<div>
                             </div> 
