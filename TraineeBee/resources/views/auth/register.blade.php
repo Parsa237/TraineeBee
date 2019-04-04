@@ -74,10 +74,25 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                         </div>
+                        <!-- Captcha Test -->
+                        {{--<form onsubmit="return checkform(this);">--}}
+                            {{--<br>--}}
+                            {{--<div class="capbox">--}}
 
+                                {{--<div id="CaptchaDiv"></div>--}}
+                                {{--<div class="capbox-inner">--}}
+                                    {{--Type the above number:<br>--}}
+
+                                    {{--<input type="hidden" id="txtCaptcha">--}}
+                                    {{--<input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>--}}
+
+                                {{--</div>--}}
+                            {{--</div>--}}
+                            {{--<br><br>--}}
+                        {{--</form>--}}
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" id="Submit_Button" class="btn btn-primary" style="background-color:#53760D; color:#D0F18F" disabled>
+                                <button type="submit" id="Submit_Button" class="btn importend" >
 
                                     {{ __('Register') }}
                                 </button>
@@ -85,23 +100,7 @@
                         </div>
                     </form>
 
-                    <!-- Captcha Test -->
-                    <form onsubmit="return checkform(this);">
-                        <br>
-                        <div class="capbox">
 
-                            <div id="CaptchaDiv"></div>
-
-                            <div class="capbox-inner">
-                            Type the above number:<br>
-
-                            <input type="hidden" id="txtCaptcha">
-                            <input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>
-
-                            </div>
-                        </div>
-                        <br><br>
-                    </form>
                 </div>
             </div>
         </div>
