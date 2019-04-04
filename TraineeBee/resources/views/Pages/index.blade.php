@@ -56,15 +56,26 @@
           </div>
         <div id="AUs"  class="col-md-8">
             <h1>About Us</h1>
-            <p>This is the about page for our project called TraineeBee</p>
+            <p>City College Plymouth and mboRijnland have joined together to create a project which will hopefully help promote internships inside the United Kingdom. Internships allow students a proper work experience before university, while work experience gives them a small step towards the work place, internships will put them right in the middle, working with others already in the industry and would give them more experience than work experience could ever do.
+Having 6 students from England and 7 from the Netherlands, gives all of us the opportunity to see different perspectives. Many of the students from England had done small projects as part of their work experience but looking from an outsider perspective gave us a deeper look at internships and the realisation that the UK education system is outdated and needs to be updated.
+</p>
+        </div>
+        <div>
+        <img id="Filler3" src="https://www.macmillandictionary.com/external/slideshow/full/Grey_full.png" class="" alt="Filler">
         </div>
 
         <h1 id="info" class="col-md-8">
             Information
         </h1>
-        <div>
-        <img id="Filler3" src="https://www.macmillandictionary.com/external/slideshow/full/Grey_full.png" class="" alt="Filler">
-        </div>
+        <p>Internships allow not only the students to get experience but also give companies the opportunity to have a new motivated workforce! As a company, you get the privilege of giving a student proper work experience, allowing them to get hands-on work. But why should a company invest? Why should a company have patience for students who wants to join the industry? Why choose our website for interns?
+Why should I as a company invest in interns?
+Much like work experience, an internship would have a student work in your company for a period, allowing them to get a proper understanding of the industry. Internships however would get the student inside the company for a longer time and would give them more experience than work experience. As a company, you get to work with a healthy, motivated student who is willing to work with your employees and will be able to adapt to the work environment much easier. This also could easily lead to a future employee, as they would have had work experience at the company, learn more about the team and the company.
+Why should you dedicate time and patience towards a student?
+As they say, time is money, and this investment is worth it. When you get spare time for that intern, you give them a opening to the industry, giving them that chance is far more effective than work experience if you want to find out more about the company. Work experience could last 2 weeks which isn’t enough time for anyone to properly settle. An internship which could last 6 months however, is far more effective at building a intern not an employee, this builds a bond with them and your team but also makes them more understandable of your situations and workflow.
+Why choose our website?
+In the UK, internships are very rare, and are only found during university students, we believe working at a younger age can help them develop as work efficient individuals who would be easier to work as a team. Our website allows you to create an account and will help you find interns. Aspiring students are able to create accounts and can easily find offers created by companies, this easy navigation is a key reason our website will benefit both student and company.
+</p>
+        
     </div>
     </body>
 
