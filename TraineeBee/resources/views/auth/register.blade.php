@@ -77,7 +77,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" id="Submit_Button" class="btn btn-primary" style="background-color:#53760D; color:#D0F18F" disabled>
+                                <button type="submit" id="Submit_Button" class="btn btn-primary" style="background-color:orange ; color:white" disabled>
 
                                     {{ __('Register') }}
                                 </button>
@@ -86,7 +86,7 @@
                     </form>
 
                     <!-- Captcha Test -->
-                    <form onsubmit="return checkform(this);">
+                    <div >
                         <br>
                         <div class="capbox">
 
@@ -97,11 +97,13 @@
 
                             <input type="hidden" id="txtCaptcha">
                             <input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>
-
-                            </div>
+							<div style="height:30px;width:60px;background-color:orange;margin-top:5px;color:#fff;padding:5px;text-align:center;" onclick="test('click');">
+								Check
+							<div>
+                            </div> 
                         </div>
                         <br><br>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -113,7 +115,30 @@
 
 <script type="text/javascript">
 
-function checkform(theform){
+function test()
+{
+	var ass = document.getElementById('CaptchaInput').value;
+	var why = "";
+
+	if(ass == ""){
+		why += "- Please Enter CAPTCHA Code.\n";
+	}
+	if(ass != ""){
+		if(ValidCaptcha(ass) == false){
+		why += "- The CAPTCHA Code Does Not Match.\n";
+		}
+	}
+	if(why != ""){
+		alert(why);
+		return false;
+	}
+}
+
+
+
+
+
+/*function checkform(theform){
 var why = "";
 
 if(theform.CaptchaInput.value == ""){
@@ -128,7 +153,7 @@ if(why != ""){
     alert(why);
     return false;
 }
-}
+}*/
 
 var a = Math.ceil(Math.random() * 9)+ '';
 var b = Math.ceil(Math.random() * 9)+ '';
