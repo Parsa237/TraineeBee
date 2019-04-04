@@ -12,6 +12,7 @@
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 </head>
 <body>
+<a class="logoNav" href="/"><img id="logo" src="{{asset('images/banner_logo.png')}}" alt="logo" href="/home"></a>
 <div class="background">
     @guest
         <div class="container-fluid nav pr-0 pt-5">
@@ -23,7 +24,6 @@
                     <a class="firstPartNav" href="/#about">About</a>
                 </div>
                 <div class="col-4"></div>
-                
                 <div class="col-2">
                     <a class="secondPartNav" href="#info">Information</a>
                 </div>
