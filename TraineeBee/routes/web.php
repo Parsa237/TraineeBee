@@ -14,7 +14,7 @@
 //Get request for PagesController.php(app/http/controllers/PagesController.php)
 //this will handle all the requests for customers looking for pages.
 Route::get('/', 'PagesController@index');
-Route::get('/contactpage', 'PagesController@contact');
+Route::get('/contact', 'PagesController@contact');
 Route::get('/profile', 'UserController@index');
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::get('/posts/create', 'PostsController@create');

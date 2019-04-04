@@ -19,6 +19,10 @@ class ContactController extends Controller
         return view('Pages.dashboard')->with('messages', $messages);
     }
 
+    public function create(){
+
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -55,6 +59,10 @@ class ContactController extends Controller
         }
 
         return view('adminpanel.contact')->with('contact', $contact);
+    }
+
+    public function update(){
+
     }
 
     /**
