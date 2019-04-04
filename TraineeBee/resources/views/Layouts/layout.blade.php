@@ -12,8 +12,7 @@
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 </head>
 <body>
-<a class="logoNav" href="/"><img id="logo" src="{{asset('images/banner_logo.png')}}" alt="logo"
-                                 href="/home"></a>
+<a class="logoNav" href="/"><img id="logo" src="{{asset('images/banner_logo.png')}}" alt="logo" href="/home"></a>
 <div class="background">
     @guest
         <div class="container-fluid nav pr-0 pt-5">
@@ -65,6 +64,8 @@
                                                              document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                                 </a>
+
+                            </a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 @csrf
                             </form>
@@ -114,7 +115,7 @@
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="./#about">About us<a>
+                            <a href="./#about">About us</a>
                         </li>
                         <li>
                             <a href="./#info">Information</a>
@@ -124,19 +125,18 @@
                 </div>
                 <!-- Grid column -->
 
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-
-                    <!-- Links -->
-                    <h5 class="text-uppercase">Contact</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Login</a>
-                        </li>
-                        <li>
-                            <a href="#!">Contact us!</a>
-                        </li>
+                        <!-- Links -->
+                        <form class="cf" action="#" method="post">
+                            <div class="half left cf">
+                                <input type="text" id="input-name" placeholder="Name" name="name">
+                                <input type="email" id="input-email" placeholder="Email address" name="email">
+                                <input type="text" id="input-subject" placeholder="Subject" name="subject">
+                            </div>
+                            <div class="half right cf">
+                                <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+                            </div>
+                            <input type="submit" value="Submit" id="input-submit">
+                        </form>
 
                     </ul>
 
