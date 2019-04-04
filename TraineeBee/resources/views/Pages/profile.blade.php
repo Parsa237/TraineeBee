@@ -97,19 +97,19 @@
                             <div class="form-group row">
                                 <label class="col-lg-3 col-form-label form-control-label">Address</label>
                                 <div class="col-lg-6">
-                                    <input class="form-control" type="text" value="Wallstreet" placeholder="Street">
+                                    <input class="form-control" type="text" value="" placeholder="Street">
                                 </div>
                                 <div class="col-lg-3">
-                                    <input class="form-control" type="text" value="267" placeholder="Number">
+                                    <input class="form-control" type="text" value="" placeholder="Number">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-lg-3 col-form-label form-control-label"></label>
                                 <div class="col-lg-6">
-                                    <input class="form-control" type="text" value="New York" placeholder="City">
+                                    <input class="form-control" type="text" value="Wallstreet" placeholder="Street">
                                 </div>
                                 <div class="col-lg-3">
-                                    <input class="form-control" type="text" value="dfg21564" placeholder="Postal Code">
+                                    <input class="form-control" type="text" value="267" placeholder="Number">
                                 </div>
                             </div>
 
@@ -121,7 +121,21 @@
                             </div>
 
                             <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Our Skills</label>
+                                <label class="col-lg-3 col-form-label form-control-label">Programming Details</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label form-control-label">Required Skills</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label form-control-label">General Info</label>
                                 <div class="col-lg-9">
                                     <textarea class="form-control" rows="5" id="comment"></textarea>
                                 </div>
