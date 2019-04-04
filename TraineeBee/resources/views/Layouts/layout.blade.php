@@ -196,46 +196,35 @@
 <!-- Footer Links -->
 <script>
 
-$(window).scroll(function () {
-if ($(this).scrollTop() > 10) { // this refers to window
-$("#stingButtonImg").addClass("stingAnimation");
-$("#stingButtonImg").removeClass("stingAnimationBack");
-$("#stingButtonImg").click(function () {
-window.scrollTo(0, 0);
-});
-} else {
-$("#stingButtonImg").addClass("stingAnimationBack");
-$("#stingButtonImg").removeClass("stingAnimation");
-$("#stingButtonImg").click(function () {
-window.scrollTo(0, 4500);
-});
-}
-});
-$(window).ready(function () {
-$i = 0;
-if ($i < 1) {
-$("#stingButtonImg").click(function () {
-window.scrollTo(0, 4500);
-});
-$i++;
-}
-if ($isReady > 0) {
-$(document.body).append('<img id=\'stingButtonImg\' src=\'images/stingButton2.png\' alt=\'\'>');
-}
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 10) { // this refers to window
+            $("#stingButtonImg").addClass("stingAnimation");
+            $("#stingButtonImg").removeClass("stingAnimationBack");
+            $("#stingButtonImg").click(function () {
+                window.scrollTo(0, 0);
+            });
+        } else {
+            $("#stingButtonImg").addClass("stingAnimationBack");
+            $("#stingButtonImg").removeClass("stingAnimation");
+            $("#stingButtonImg").click(function () {
+                window.scrollTo(0, 4500);
+            });
+        }
+    });
+    $(window).ready(function () {
+        $i = 0;
+        if ($i < 1) {
+            $("#stingButtonImg").click(function () {
+                window.scrollTo(0, 4500);
+            });
+            $i++;
+        }
+        if ($isReady > 0) {
+            $(document.body).append('<img id=\'stingButtonImg\' src=\'images/stingButton2.png\' alt=\'\'>');
+        }
+    });
 
-});
-
-
-$(window).scroll(function () {
-if ($(this).scrollTop() > window.innerHeight - 250) { // this refers to window
-$("#stingButtonImg").css({
-"display": "none",
-"backgroud-color": "pink"
-});
-}
-});
-// <img id="stingButtonImg" src="images/stingButton2.png" alt="">
 
 </script>
 </body>
-< /html>
+</html>
