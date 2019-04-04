@@ -38,7 +38,7 @@
                         <div class="col-md-6 Blank ">ehwfeuife</div>
                         <div class="col-md-6 Blank"></div>
                         <!-- third picture-->
-                        <div class="col-md-6 Hexagon ">
+                        <div class="col-md-6 Hexagon  ">
                         </div>
                         <div class="col-md-6 Blank">weuryu9wi</div>
 
