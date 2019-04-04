@@ -1,6 +1,9 @@
 <html lang="{{config('app.locale')}}">
 <head>
     <title>{{config('app.name', 'TraineeBee')}}</title>
+
+    <link rel=”shortcut icon” href=”/images/favicon.ico” type=”image/x-icon” />
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{asset('css/main.css')}}">
@@ -9,7 +12,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 </head>
 <body>
 <a class="logoNav" href="/"><img id="logo" src="{{asset('images/banner_logo.png')}}" alt="logo"
