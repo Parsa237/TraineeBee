@@ -41,7 +41,7 @@
                 <div class="col-4"></div>
 
                 <div class="col-2">
-                    <a class="secondPartNav" href="#info">Information</a>
+                    <a class="secondPartNav" href="/#info">Information</a>
                 </div>
                 <div class="col-2">
                     <a class="secondPartNav" href="/login" id="login">Login/Register</a>
@@ -63,7 +63,7 @@
                 <div class="col-4">
                 </div>
                 <div class="col-2">
-                    <a class="secondPartNavDashboard" href="/profile">Profile</a>
+                    <a class="secondPartNav" href="/#info">Information</a>
                 </div>
                 <div class="col-2">
                     <li class="secondPartNavDashboard dropdown">
@@ -73,6 +73,7 @@
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/profile">Profile</a>
                             <a class="dropdown-item" href="/yourposts">Your posts</a>
                             <a class="dropdown-item" href="/posts/create">Create post</a>
                             <a class="dropdown-item" href="{{ route('logout') }}"
@@ -98,9 +99,6 @@
     <div class="container">
         @yield('content')
     </div>
-    <div class="container">
-
-    </div>
 
     <footer class="page-footer font-small blue pt-4 footer">
 
@@ -115,7 +113,7 @@
 
                     <!-- Content -->
                     <h5 class="text-uppercase">TraineeBee</h5>
-                    <p>Feel free to contact us if you have any suggestions about our page. </p>
+                    <p>Feel free to contact us if you have any suggestions about our page:<br>Email: mail@gmail.com</p>
 
                 </div>
                 <!-- Grid column -->
@@ -189,11 +187,10 @@
         <!-- Footer Links -->
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3 ">© 2019 Copyright:
+        <div class="footer-copyright text-center py-3 ">© 2019 Copyright
             Traineebee
         </div>
     </footer>
-
 </div>
 <!-- Footer Links -->
 <script>
@@ -203,13 +200,17 @@
             $("#stingButtonImg").addClass("stingAnimation");
             $("#stingButtonImg").removeClass("stingAnimationBack");
             $("#stingButtonImg").click(function () {
-                window.scrollTo(0, 0);
+                window.scrollTo({
+                    left: 0, top:  0, behavior: 'smooth'
+                });
             });
         } else {
             $("#stingButtonImg").addClass("stingAnimationBack");
             $("#stingButtonImg").removeClass("stingAnimation");
             $("#stingButtonImg").click(function () {
-                window.scrollTo(0, 4500);
+                window.scrollTo({
+                    left: 0, top:  4500, behavior: 'smooth'
+                });
             });
         }
     });
@@ -217,14 +218,18 @@
         $i = 0;
         if ($i < 1) {
             $("#stingButtonImg").click(function () {
-                window.scrollTo(0, 4500);
+                window.scrollTo({
+                    left: 0, top:  4500, behavior: 'smooth'
             });
-            $i++;
         }
-        if ($isReady > 0) {
-            $(document.body).append('<img id=\'stingButtonImg\' src=\'images/stingButton2.png\' alt=\'\'>');
-        }
-    });
+    );
+    $i++;
+    }
+    if ($isReady > 0) {
+        $(document.body).append('<img id=\'stingButtonImg\' src=\'images/stingButton2.png\' alt=\'\'>');
+    }
+    })
+    ;
 
 
 </script>

@@ -1,26 +1,47 @@
 @extends('Layouts.layout')
 @section('stylesheet')
-    <link rel="stylesheet" href="../../../public/css/companyProfile.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/css/profileStyle.css">
 @endsection
 @section('content')
+    <div class="hexagon hexagon1"><div class="hexagon-in1"><div class="hexagon-in2"></div></div></div>
+    <img src="http://placehold.it/1080x400" class="m-x-auto img-fluid img-circle" alt="avatar">
 
     <div class="container border-top">
         <img src="/uploads/avatars/{{$user->headerimage}}" class="m-x-auto img-fluid img-circle" alt="avatar">
 
         <div class="row m-y-2" style="margin: -125px 0 0 125px">
             <div class="col-lg-12 pull-lg-12 text-xs-center">
-                <img src="/uploads/avatars/{{ $user->avatar }}" class="m-x-auto img-fluid img-circle border profilePic"
+                <img src="/uploads/avatars/{{ $user->avatar }}" class="img-fluid border rounded-circle"
                      alt="avatar">
-                <h6 class="m-t-2">Upload a different photo</h6>
-                <label class="custom-file">
-                    <input type="file" id="file" class="custom-file-input">
-                </label>
+                <h5 class="m-t-2">Company name</h5>
+                <h6>Open to aply</h6>
+
             </div>
-        </div>
-       
             <div class="btn-group btn-group-lg">
                 <button type="button" class="btn btn-primary">Contact</button>
+            </div>
+
         </div>
+        <div class="col-md-6 mt-5">
+            <h2>Why we are the BEST</h2>
+            <br>
+            <p>
+                programming Lorem ipsum dolor sit amet,
+                consectetuer adipiscing elit. Aenean commodo
+                ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur
+                ridiculus mus. Donec quam felis, ultricies nec,
+                pellentesque eu, pretium quis, sem. Nulla consequat
+                massa quis enim. Donec pede justo, fringilla
+                vel, aliquet nec, vulputate eget, arcu. In enim
+                justo, rhoncus ut, imperdiet a, venenatis vitae,
+                justo. Nullam dictum felis eu pede mollis pretium.
+                Integer tincidunt. Cras dapibus. Vivamus elementum semper
+                nisi. Aenean vulputate eleifend
+            </p>
+        </div>
+    </div>
+    </div>
 
         <div class="row m-y-2 pt-5">
             <div class="col-lg-10 push-lg-2">
@@ -125,7 +146,6 @@
             </div>
 
         </div>
-    </div>
     <hr>
     <div class="album py-5 bg-light ">
         <div class="container">
@@ -194,6 +214,7 @@
             </div>
         </div>
     </div>
-    <hr>
 
+
+    <img id="stingButtonImg" src="images/stingButton2.png" alt="" class="stingAnimationBack">
 @endsection
