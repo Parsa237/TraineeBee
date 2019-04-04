@@ -62,8 +62,7 @@
                                onclick="event.preventDefault();
                                                              document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
-                            </a>
-
+                                </a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 @csrf
                             </form>
@@ -73,7 +72,7 @@
             </div>
         </div>
     <div class="hexagon">
-        <img id="logoDashboard" src="{{asset('images/banner_logo.png')}}" alt="logo">
+        <a class="logoNav" href="/"><img id="logo" src="{{asset('images/banner_logo.png')}}" alt="logo" href="/home"></a>
     </div>
     @endguest
 
