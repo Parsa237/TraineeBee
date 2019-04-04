@@ -147,23 +147,23 @@
 
                 <!-- Grid column -->
 
-                {{--<div class="col-md-3 mb-md-0 mb-3">--}}
+            {{--<div class="col-md-3 mb-md-0 mb-3">--}}
 
-                    {{--<form class="cf" action="contactform.php" method="post">--}}
-                        {{--<div class="half left cf">--}}
-                            {{--<input type="text" id="input-name" placeholder="Name" name="name">--}}
-                            {{--<input type="email" id="input-email" placeholder="Email address" name="email">--}}
-                            {{--<input type="text" id="input-subject" placeholder="Subject" name="subject">--}}
-                        {{--</div>--}}
-                        {{--<div class="half right cf">--}}
-                            {{--<textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>--}}
-                        {{--</div>--}}
-                        {{--<input type="submit" value="Submit" id="input-submit">--}}
-                    {{--</form>--}}
+            {{--<form class="cf" action="contactform.php" method="post">--}}
+            {{--<div class="half left cf">--}}
+            {{--<input type="text" id="input-name" placeholder="Name" name="name">--}}
+            {{--<input type="email" id="input-email" placeholder="Email address" name="email">--}}
+            {{--<input type="text" id="input-subject" placeholder="Subject" name="subject">--}}
+            {{--</div>--}}
+            {{--<div class="half right cf">--}}
+            {{--<textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>--}}
+            {{--</div>--}}
+            {{--<input type="submit" value="Submit" id="input-submit">--}}
+            {{--</form>--}}
 
-                {{--</div>--}}
+            {{--</div>--}}
 
-                <!-- Grid column -->
+            <!-- Grid column -->
                 <div class="col-md-3 mb-md-0 mb-3">
 
                     <!-- Links -->
@@ -176,45 +176,45 @@
                         <li>
                             <a href="./#info">Information</a>
                         </li>
-                            <a href="#!">Login</a>
-                        </li>
-                        <li>
-                            <a href="#!">Contact us!</a>
-                        </li>
-
                     </ul>
                 </div>
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
+                <a href="#!">Login</a>
+                </li>
+                <li>
+                    <a href="#!">Contact us!</a>
+                </li>
 
-                    <form class="cf" action="contactform.php" method="post">
-                        <div class="half left cf">
-                            <input type="text" id="input-name" placeholder="Name" name="name">
-                            <input type="email" id="input-email" placeholder="Email address" name="email">
-                            <input type="text" id="input-subject" placeholder="Subject" name="subject">
-                        </div>
-                        <div class="half right cf">
-                            <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
-                        </div>
-                        <input type="submit" value="Submit" id="input-submit">
-                    </form>
-
-                    </ul>
-                </div>
-                <!-- Grid column -->
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#!">Login</a>
-                    </li>
-                    <li>
-                        <a href="#!">Contact us!</a>
-                    </li>
                 </ul>
-
             </div>
-            <!-- Grid row -->
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <form class="cf" action="contactform.php" method="post">
+                    <div class="half left cf">
+                        <input type="text" id="input-name" placeholder="Name" name="name">
+                        <input type="email" id="input-email" placeholder="Email address" name="email">
+                        <input type="text" id="input-subject" placeholder="Subject" name="subject">
+                    </div>
+                    <div class="half right cf">
+                        <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+                    </div>
+                    <input type="submit" value="Submit" id="input-submit">
+                </form>
+
+                </ul>
+            </div>
+            <!-- Grid column -->
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#!">Login</a>
+                </li>
+                <li>
+                    <a href="#!">Contact us!</a>
+                </li>
+            </ul>
 
         </div>
+        <!-- Grid row -->
 
 
         <!-- Footer Links -->
