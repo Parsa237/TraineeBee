@@ -15,17 +15,8 @@ class ContactController extends Controller
      */
     public function index()
     {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+        $messages = Contact::orderBy('created_at')->paginate(5);
+        return view('Pages.dashboard')->with('messages', $messages);
     }
 
     /**
@@ -36,7 +27,16 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'email' => 'required',
+            'message' => 'required'
+        ]);
+
+        $contact = new Contact;
+        $contact->email = $request->input('email');
+        $contact->message = $request->input('message');
+        $contact->save();
+        return redirect('/dashboard')->with('success', 'Message send');
     }
 
     /**
@@ -46,29 +46,6 @@ class ContactController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(Contact $contact)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Contact  $contact
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Contact $contact)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Contact  $contact
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Contact $contact)
     {
         //
     }
