@@ -21,6 +21,10 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('avatar')->default('default.png');
             $table->string('headerimage')->default('defaultheader.png');
+            $table->string('website')->default('');
+            $table->string('address')->default('');
+            $table->longText('internshipinfo')->nullable();
+            $table->longText('skills')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
