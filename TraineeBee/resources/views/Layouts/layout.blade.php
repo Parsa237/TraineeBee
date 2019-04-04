@@ -41,7 +41,7 @@
                 <div class="col-4"></div>
 
                 <div class="col-2">
-                    <a class="secondPartNav" href="#info">Information</a>
+                    <a class="secondPartNav" href="/#info">Information</a>
                 </div>
                 <div class="col-2">
                     <a class="secondPartNav" href="/login" id="login">Login/Register</a>
@@ -63,7 +63,7 @@
                 <div class="col-4">
                 </div>
                 <div class="col-2">
-                    <a class="secondPartNavDashboard" href="/profile">Profile</a>
+                    <a class="secondPartNav" href="/#info">Information</a>
                 </div>
                 <div class="col-2">
                     <li class="secondPartNavDashboard dropdown">
