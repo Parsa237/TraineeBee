@@ -50,7 +50,11 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $profile = User::find($id);
+        if(auth()->user()->id !== $profile->id){
+            return redirect('/dashboard')->with('error', 'Unauthorized profile edit');
+        }
+        return view('Profile.edit')->with('profile', $profile);
     }
 
     /**
@@ -63,15 +67,19 @@ class UserController extends Controller
     public function update(Request $request, $id)
     {
         $this->validate($request, [
-            'title' => 'required',
-            'body' => 'required'
+            'address' => 'required',
+            'website' => 'required',
+            'internshipinfo' => 'required',
+            'skill' => 'required'
         ]);
 
-        $post = Post::find($id);
-        $post->title = $request->input('title');
-        $post->body = $request->input('body');
-        $post->save();
-        return redirect('/dashboard')->with('success', 'Post Updated');
+        $profile = User::find($id);
+        $profile->website = $request->input('website');
+        $profile->address = $request->input('address');
+        $profile->internshipinfo = $request->input('internshipinfo');
+        $profile->skills = $request->input('skills');
+        $profile->save();
+        return redirect('/profile/{{$profile->id}}')->with('success', 'Post Updated');
     }
 
     /**
