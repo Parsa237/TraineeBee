@@ -16,7 +16,10 @@
                 </label>
             </div>
         </div>
-
+       
+            <div class="btn-group btn-group-lg">
+                <button type="button" class="btn btn-primary">Contact</button>
+        </div>
 
         <div class="row m-y-2">
             <div class="col-lg-10 push-lg-2">
