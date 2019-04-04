@@ -113,7 +113,7 @@
 
                     <!-- Content -->
                     <h5 class="text-uppercase">TraineeBee</h5>
-                    <p>Feel free to contact us if you have any suggestions about our page. </p>
+                    <p>Feel free to contact us if you have any suggestions about our page:<br>Email: mail@gmail.com</p>
 
                 </div>
                 <!-- Grid column -->
@@ -187,7 +187,7 @@
         <!-- Footer Links -->
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3 ">© 2019 Copyright:
+        <div class="footer-copyright text-center py-3 ">© 2019 Copyright
             Traineebee
         </div>
     </footer>

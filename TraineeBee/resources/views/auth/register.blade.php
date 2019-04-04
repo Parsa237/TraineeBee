@@ -101,6 +101,25 @@
                     </form>
 
 
+                    {{--<!-- Captcha Test -->--}}
+                    {{--<div >--}}
+                        {{--<br>--}}
+                        {{--<div class="capbox">--}}
+
+                            {{--<div id="CaptchaDiv"></div>--}}
+
+                            {{--<div class="capbox-inner">--}}
+                            {{--Type the above number:<br>--}}
+
+                            {{--<input type="hidden" id="txtCaptcha">--}}
+                            {{--<input type="text" name="CaptchaInput" id="CaptchaInput" size="15" style="border-radius:2.5px;border:1px solid #dcdcdc;"><br>--}}
+							{{--<div style="height:30px;width:60px;background-color:orange;margin-top:5px;color:#fff;padding:5px;text-align:center;border-radius:2.5px;" onclick="test('click');">--}}
+								{{--Check--}}
+							{{--<div>--}}
+                            {{--</div> --}}
+                        {{--</div>--}}
+                        {{--<br><br>--}}
+                    {{--</div>--}}
                 </div>
             </div>
         </div>
@@ -112,7 +131,30 @@
 
 <script type="text/javascript">
 
-function checkform(theform){
+function test()
+{
+	var ass = document.getElementById('CaptchaInput').value;
+	var why = "";
+
+	if(ass == ""){
+		why += "- Please Enter CAPTCHA Code.\n";
+	}
+	if(ass != ""){
+		if(ValidCaptcha(ass) == false){
+		why += "- The CAPTCHA Code Does Not Match.\n";
+		}
+	}
+	if(why != ""){
+		alert(why);
+		return false;
+	}
+}
+
+
+
+
+
+/*function checkform(theform){
 var why = "";
 
 if(theform.CaptchaInput.value == ""){
@@ -127,7 +169,7 @@ if(why != ""){
     alert(why);
     return false;
 }
-}
+}*/
 
 var a = Math.ceil(Math.random() * 9)+ '';
 var b = Math.ceil(Math.random() * 9)+ '';
