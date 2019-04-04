@@ -209,7 +209,7 @@
             $("#stingButtonImg").removeClass("stingAnimation");
             $("#stingButtonImg").click(function () {
                 window.scrollTo({
-                    left: 0, top:  4500, behavior: 'smooth'
+                    left: 0, top:  885, behavior: 'smooth'
                 });
             });
         }
