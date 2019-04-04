@@ -36,7 +36,7 @@ Not only do
             <div class="col-md-6 Blank ">ehwfeuife</div>
             <div class="col-md-6 Blank"></div>
             <!-- third picture-->
-           
+
             <div class="col-md-6 Blank">weuryu9wi</div>
 
         </div>
@@ -47,7 +47,7 @@ Not only do
             Who are we?
 We are a collection of 13 students from the Netherlands and Britain working on a project together to promote internships into the English education system.
 Why are we doing this?
-Our main goal is to promote internships, programs that while in education, students get a hands-on experience in the work place that allows them to work with a company for a long duration of time. They also allow companies to see upcoming prodigies, get to work with students who are motivated and possibly find a future employee.
+Our main goal is to promote internships, programs that while in education, students get a hands-on experience in the work place that allows them to work with a company for a long duration of time. They also allow companies to see upcoming prodigies, get to work with students who are motivated and possibly find a future employee. Following a trip to the Netherlands the British students came to realise that completing an internship in the U.K could boost their job prospects dramatically. Interns have been proven to be very valuable to companies and bringing it to the U.K would increase the quality of knowledge that students have.
 
             </p>
         </div>
