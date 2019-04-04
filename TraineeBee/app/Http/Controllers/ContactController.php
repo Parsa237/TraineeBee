@@ -47,7 +47,13 @@ class ContactController extends Controller
      */
     public function show(Contact $contact)
     {
-        //
+        $searchContact = Contact::find($contact);
+
+        if($searchContact == NULL){
+            return redirect('/admingpanel')->with('error', "Couldn't find Contact");
+        }
+
+        return view('adminpanel.contact')->with('contact', $contact);
     }
 
     /**

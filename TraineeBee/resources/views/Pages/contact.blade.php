@@ -2,7 +2,7 @@
 @section('content')
     <link rel="stylesheet" href="{{asset('css/contactstyle.css')}}">
     <h1>Contact page</h1>
-    <form class="cf" action="contactaction.blade.php" method="post">
+    <form class="cf" action="{{ route('contact.store') }}" method="POST">
         <div class="half left cf">
             <input type="text" id="input-name" placeholder="Name" name="name">
             <input type="email" id="input-email" placeholder="Email address" name="email">

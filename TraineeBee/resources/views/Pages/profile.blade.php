@@ -4,40 +4,19 @@
 @endsection
 @section('content')
     <div class="hexagon hexagon1"><div class="hexagon-in1"><div class="hexagon-in2"></div></div></div>
-    <img src="http://placehold.it/1080x400" class="m-x-auto img-fluid img-circle" alt="avatar">
-
     <div class="container border-top">
         <img src="/uploads/avatars/{{$user->headerimage}}" class="m-x-auto img-fluid img-circle" alt="avatar">
 
         <div class="row m-y-2" style="margin: -125px 0 0 125px">
             <div class="col-lg-12 pull-lg-12 text-xs-center">
-                <img src="/uploads/avatars/{{ $user->avatar }}" class="img-fluid border rounded-circle"
-                     alt="avatar">
-                <h5 class="m-t-2">Company name</h5>
-                <h6>Open to aply</h6>
-
-            </div>
-            <div class="btn-group btn-group-lg">
-                <button type="button" class="btn btn-primary">Contact</button>
-            </div>
-
+                <img src="storage/uploads/avatars/{{ $user->avatar }}" class="img-fluid border rounded-circle" alt="avatar">
+                <h5 class="m-t-2">{{$user->name}}</h5>
         </div>
         <div class="col-md-6 mt-5">
             <h2>Why we are the BEST</h2>
             <br>
             <p>
-                programming Lorem ipsum dolor sit amet,
-                consectetuer adipiscing elit. Aenean commodo
-                ligula eget dolor. Aenean massa. Cum sociis natoque
-                penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus. Donec quam felis, ultricies nec,
-                pellentesque eu, pretium quis, sem. Nulla consequat
-                massa quis enim. Donec pede justo, fringilla
-                vel, aliquet nec, vulputate eget, arcu. In enim
-                justo, rhoncus ut, imperdiet a, venenatis vitae,
-                justo. Nullam dictum felis eu pede mollis pretium.
-                Integer tincidunt. Cras dapibus. Vivamus elementum semper
-                nisi. Aenean vulputate eleifend
+                {{$user->generalinfo}}
             </p>
         </div>
     </div>
@@ -46,101 +25,26 @@
         <div class="row m-y-2 pt-5">
             <div class="col-lg-10 push-lg-2">
                 <ul class="nav nav-tabs">
-
                     <li class="nav-item col-12 col-sm-auto text-md-left text-center">
-                        <a href="" data-target="#internship" data-toggle="tab"
-                           class="nav-link text-muted">Internship</a>
+                        <a onclick="openTab(event, 'internship')" class="nav-link text-muted tablinks">Internship</a>
                     </li>
                     <li class="nav-item col-12 col-sm-auto text-md-left text-center">
-                        <a href="" data-target="#skills" data-toggle="tab" class="nav-link text-muted">Skills</a>
+                        <a onclick="openTab(event, 'skills')" class="nav-link text-muted tablinks">Skills</a>
                     </li>
                     <li class="nav-item col-12 col-sm-auto text-md-left text-center">
                         <a href="/profile/{{$user->id}}/edit" class="nav-link text-muted">Edit</a>
                     </li>
                 </ul>
                 <div class="tab-content p-b-3">
-                    <div class="tab-pane active" id="internship">
+                    <div class="tab-pane tabcontent" id="internship">
                         <h3>{{$user->name}}</h3>
                         <p>{{$user->internshipinfo}}</p>
                     </div>
-
-
-                    <div class="tab-pane" id="edit">
-                        <h4 class="m-y-2">Edit Profile</h4>
-                        <form role="form">
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">First name</label>
-                                <div class="col-lg-9">
-                                    <input class="form-control" type="text" value='{{$user->name}}'>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Last name</label>
-                                <div class="col-lg-9">
-                                    <input class="form-control" type="text" value="Bishop">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Email</label>
-                                <div class="col-lg-9">
-                                    <input class="form-control" type="email" value="email@gmail.com">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Company</label>
-                                <div class="col-lg-9">
-                                    <input class="form-control" type="text" value="Google">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Website</label>
-                                <div class="col-lg-9">
-                                    <input class="form-control" type="url" value="www.google.com">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Address</label>
-                                <div class="col-lg-6">
-                                    <input class="form-control" type="text" value="" placeholder="Street">
-                                </div>
-                                <div class="col-lg-3">
-                                    <input class="form-control" type="text" value="" placeholder="Number">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label"></label>
-                                <div class="col-lg-6">
-                                    <input class="form-control" type="text" value="Wallstreet" placeholder="Street">
-                                </div>
-                                <div class="col-lg-3">
-                                    <input class="form-control" type="text" value="267" placeholder="Number">
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Internship Details </label>
-                                <div class="col-lg-9">
-                                    <textarea class="form-control" rows="5" id="comment"></textarea>
-                                </div>
-                            </div>
-
-
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label">Our Skills</label>
-                                <div class="col-lg-9">
-                                    <textarea class="form-control" rows="5" id="comment"></textarea>
-                                </div>
-                            </div>
-
-
-                            <div class="form-group row">
-                                <label class="col-lg-3 col-form-label form-control-label"></label>
-                                <div class="col-lg-9">
-                                    <input type="reset" class="btn btn-secondary" value="Cancel">
-                                    <input type="button" class="btn btn-primary" value="Save Changes">
-                                </div>
-                            </div>
-                        </form>
+                </div>
+                <div class="tab-content p-b-3">
+                    <div class="tab-pane active tabcontent" id="skills">
+                        <h3>{{$user->name}}</h3>
+                        <p>{{$user->internshipinfo}}</p>
                     </div>
                 </div>
             </div>
@@ -214,7 +118,28 @@
             </div>
         </div>
     </div>
+<script>
+    function openTab(evt, tabName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
 
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
 
     <img id="stingButtonImg" src="images/stingButton2.png" alt="" class="stingAnimationBack">
 @endsection

@@ -20,17 +20,6 @@ class UserController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
      * Display the specified resource.
      *
      * @param  int  $id
@@ -66,20 +55,29 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $this->validate($request, [
-            'address' => 'required',
-            'website' => 'required',
-            'internshipinfo' => 'required',
-            'skill' => 'required'
-        ]);
+
+
+        if($request->hasFile('avatar')) {
+            $filenameWithExt = $request->file('avatar')->getClientOriginalName();
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            $extension = $request->file('avatar')->getClientOriginalExtension();
+            $filenameToStore = $filename . '_' . time() . '.' . $extension;
+            $path = $request->file('avatar')->storeAs('public/uploads/avatars', $filenameToStore);
+        }else{
+            $filenameToStore = 'default.png';
+        }
+
+//        var_dump($path);
 
         $profile = User::find($id);
         $profile->website = $request->input('website');
         $profile->address = $request->input('address');
+        $profile->generalinfo = $request->input('generalinfo');
         $profile->internshipinfo = $request->input('internshipinfo');
         $profile->skills = $request->input('skills');
+        $profile->avatar = $filenameToStore;
         $profile->save();
-        return redirect('/profile/{{$profile->id}}')->with('success', 'Post Updated');
+        return redirect('/dashboard')->with('success', 'Post Updated');
     }
 
     /**

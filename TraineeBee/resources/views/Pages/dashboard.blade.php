@@ -4,7 +4,7 @@
         @if(count($posts) > 0)
             @foreach($posts as $post)
                 <div class=" card-body bg-light p-3 grid-container DashBorder">
-                    <div class="dashboarda"><img class="imgsize" src="images/300.png"/></div>
+                    <div class="dashboarda"><img class="imgsize" src="storage/uploads/avatars/{{ $post->user->avatar }}"/></div>
                     <div>
                        
                        
@@ -18,7 +18,7 @@
                         <h1>
 {{--                            <p class="DashDesc">Job Description: {{$post->body}}</p>--}}
                         </h1>
-                        <small>Posted on {{$post->created_at}} - Posted by {{$post->user->name}}</small>
+                        <small>Posted on {{$post->created_at}} - Posted by <a href="/profile/{{$post->user_id}}">{{$post->user->name}}</a></small>
                     </div>
                 </div>
             @endforeach

@@ -17,23 +17,7 @@ class PagesController extends Controller
         return view('Pages.index');
     }
 
-    public function about(){
-        return view('Pages.about');
-    }
-
-    public function CandCInfo(){
-        return view('Pages.candcinfo');
-    }
-
-    public function login(){
-        return view('Pages.login');
-    }
-
     public function contact(){
         return view('Pages.contact');
-    }
-
-    public function adminpanel(){
-        return view('Pages.adminpanel');
     }
 }
