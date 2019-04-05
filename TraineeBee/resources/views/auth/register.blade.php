@@ -75,6 +75,7 @@
                             </div>
                         </div>
                         <!-- Captcha Test -->
+
                             <br>
                             <div class="capbox form-check  centerd row">
                                 <div data-unselectable="unselectable content" id="CaptchaDiv"></div>
@@ -87,6 +88,7 @@
                                     </button>
                                     <br><br>
                                 </div>
+
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" id="Submit_Button" class="btn importend" >
@@ -99,7 +101,25 @@
                     </form>
 
 
+                    {{--<!-- Captcha Test -->--}}
+                    {{--<div >--}}
+                        {{--<br>--}}
+                        {{--<div class="capbox">--}}
 
+                            {{--<div id="CaptchaDiv"></div>--}}
+
+                            {{--<div class="capbox-inner">--}}
+                            {{--Type the above number:<br>--}}
+
+                            {{--<input type="hidden" id="txtCaptcha">--}}
+                            {{--<input type="text" name="CaptchaInput" id="CaptchaInput" size="15" style="border-radius:2.5px;border:1px solid #dcdcdc;"><br>--}}
+							{{--<div style="height:30px;width:60px;background-color:orange;margin-top:5px;color:#fff;padding:5px;text-align:center;border-radius:2.5px;" onclick="test('click');">--}}
+								{{--Check--}}
+							{{--<div>--}}
+                            {{--</div> --}}
+                        {{--</div>--}}
+                        {{--<br><br>--}}
+                    {{--</div>--}}
                 </div>
             </div>
         </div>

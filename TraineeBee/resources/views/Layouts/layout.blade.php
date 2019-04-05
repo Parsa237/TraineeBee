@@ -128,7 +128,7 @@
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="./#aboutLink">About us<a>
+                            <a href="./#about">About us<a>
                         </li>
                         <li>
                             <a href="./#info">Information</a>
@@ -166,10 +166,13 @@
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="./#aboutLink">Mail us</a>
+                            <a>Cipher Street 21</a>
                         </li>
                         <li>
-                            <a href="./#info">Information</a>
+                            <a>2172 FK Leiden</a>
+                        </li>
+                        <li>
+                            <a>Email: traineebee@gmail.com</a>
                         </li>
                     </ul>
                 </div>
