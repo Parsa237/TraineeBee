@@ -150,27 +150,6 @@ function test()
 	}
 }
 
-
-
-
-
-/*function checkform(theform){
-var why = "";
-
-if(theform.CaptchaInput.value == ""){
-    why += "- Please Enter CAPTCHA Code.\n";
-}
-if(theform.CaptchaInput.value != ""){
-    if(ValidCaptcha(theform.CaptchaInput.value) == false){
-    why += "- The CAPTCHA Code Does Not Match.\n";
-    }
-}
-if(why != ""){
-    alert(why);
-    return false;
-}
-}*/
-
 var a = Math.ceil(Math.random() * 9)+ '';
 var b = Math.ceil(Math.random() * 9)+ '';
 var c = Math.ceil(Math.random() * 9)+ '';
