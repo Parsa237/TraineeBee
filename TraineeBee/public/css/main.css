@@ -16,7 +16,7 @@
     }
     100% {
         position: fixed;
-        left: 85vw;
+        left: 90vw;
         transform: rotate(180deg);
         width: 3vw;
     }
@@ -28,7 +28,7 @@
     }
     100% {
         position: absolute;
-        left: 85vw;
+        left: 90vw;
         width: 3vw;
         bottom: calc(100vw - 250px);
     }
@@ -37,7 +37,7 @@
 @keyframes stingRotateBack {
     0% {
         position: fixed;
-        left: 85vw;
+        left: 90vw;
         transform: rotate(180deg);
         width: 3vw;
     }

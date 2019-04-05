@@ -75,21 +75,21 @@
                             </div>
                         </div>
                         <!-- Captcha Test -->
-                        {{--<form onsubmit="return checkform(this);">--}}
-                            {{--<br>--}}
-                            {{--<div class="capbox">--}}
 
-                                {{--<div id="CaptchaDiv"></div>--}}
-                                {{--<div class="capbox-inner">--}}
-                                    {{--Type the above number:<br>--}}
 
+                            {{--<div class="form-group row">--}}
+                                {{--<div data-unselectable="unselectable content" id="CaptchaDiv"></div>--}}
+                                {{--<label class="capbox-inner col-md-4 float-right">--}}
+                                    {{--Type the above number:--}}
                                     {{--<input type="hidden" id="txtCaptcha">--}}
-                                    {{--<input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>--}}
+                                {{--</label>--}}
+                                    {{--<input type="number"  class="col-md-6 col-form-label" name="CaptchaInput" id="CaptchaInput" size="6"><br>--}}
+                                    {{--<button  class=" btn importend " onclick="test('click');">--}}
+                                        {{--Check ✔--}}
+                                    {{--</button>--}}
+                                    {{--<br><br>--}}
 
-                                {{--</div>--}}
-                            {{--</div>--}}
-                            {{--<br><br>--}}
-                        {{--</form>--}}
+
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" id="Submit_Button" class="btn importend" >
@@ -98,6 +98,7 @@
                                 </button>
                             </div>
                         </div>
+                            </div>
                     </form>
 
 
@@ -149,27 +150,6 @@ function test()
 		return false;
 	}
 }
-
-
-
-
-
-/*function checkform(theform){
-var why = "";
-
-if(theform.CaptchaInput.value == ""){
-    why += "- Please Enter CAPTCHA Code.\n";
-}
-if(theform.CaptchaInput.value != ""){
-    if(ValidCaptcha(theform.CaptchaInput.value) == false){
-    why += "- The CAPTCHA Code Does Not Match.\n";
-    }
-}
-if(why != ""){
-    alert(why);
-    return false;
-}
-}*/
 
 var a = Math.ceil(Math.random() * 9)+ '';
 var b = Math.ceil(Math.random() * 9)+ '';

@@ -37,4 +37,18 @@
     text-decoration: wavy;
     border-bottom: 3px white solid;
     transition: 0.3s;
+
+}
+#CaptchaDiv{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-focus-key: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.centerd{
+    margin-left:auto;
+    margin-right: auto;
+
 }
