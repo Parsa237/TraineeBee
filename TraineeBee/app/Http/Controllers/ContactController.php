@@ -16,11 +16,12 @@ class ContactController extends Controller
     public function index()
     {
         $messages = Contact::orderBy('created_at')->paginate(5);
-        return view('Pages.dashboard')->with('messages', $messages);
+//        var_dump($messages);
+        return view('adminpanel.panel')->with('messages', $messages);
     }
 
     public function create(){
-
+        return view('adminpanel.contact');
     }
 
     /**
@@ -31,6 +32,7 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
+        var_dump($request);
         $this->validate($request, [
             'email' => 'required',
             'message' => 'required'
@@ -39,8 +41,11 @@ class ContactController extends Controller
         $contact = new Contact;
         $contact->email = $request->input('email');
         $contact->message = $request->input('message');
+        $contact->name = $request->input('name');
         $contact->save();
-        return redirect('/dashboard')->with('success', 'Message send');
+
+        var_dump($contact);
+//        return redirect('/dashboard')->with('success', 'Message send');
     }
 
     /**

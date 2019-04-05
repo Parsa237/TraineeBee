@@ -3,9 +3,9 @@
     <link rel="stylesheet" href="{{asset('css/contactstyle.css')}}">
     <h1>Contact page</h1>
     {{--{{ route('contactController.create') }}--}}
-    <form class="cf" action="contactaction.blade.php">
+    <form class="cf" action="{{ route('adminpanel.store') }}" method="POST">
+        @csrf
         <div class="half left cf">
-            @csrf
             <input type="text" id="input-name" placeholder="Name" name="name">
             <input type="email" id="input-email" placeholder="Email address" name="email">
             <input type="text" id="input-subject" placeholder="Subject" name="subject">

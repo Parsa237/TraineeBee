@@ -128,10 +128,10 @@
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="./#about">About us<a>
+                            <a href="/#about">About us</a>
                         </li>
                         <li>
-                            <a href="./#info">Information</a>
+                            <a href="/#info">Information</a>
                         </li>
 
                     </ul>
@@ -166,10 +166,10 @@
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="./#about">Mail us</a>
+                            <a href="/adminpanel/create">Mail us</a>
                         </li>
                         <li>
-                            <a href="./#info">Information</a>
+                            <a href="/#info">Information</a>
                         </li>
                     </ul>
                 </div>

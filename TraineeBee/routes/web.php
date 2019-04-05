@@ -19,8 +19,9 @@ Route::get('/profile', 'UserController@index');
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::get('/posts/create', 'PostsController@create');
 Route::get('/yourposts', 'HomeController@index');
+Route::get('/adminpanel/create', 'ContactController@create');
 Auth::routes();
 
 Route::resource('posts', 'PostsController');
 Route::resource('profile', 'UserController');
-Route::resource('contactController', 'ContactController');
+Route::resource('adminpanel', 'ContactController');
