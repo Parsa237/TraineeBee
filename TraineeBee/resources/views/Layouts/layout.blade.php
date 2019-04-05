@@ -166,10 +166,13 @@
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="./#about">Mail us</a>
+                            <a>Cipher Street 21</a>
                         </li>
                         <li>
-                            <a href="./#info">Information</a>
+                            <a>2172 FK Leiden</a>
+                        </li>
+                        <li>
+                            <a>Email: traineebee@gmail.com</a>
                         </li>
                     </ul>
                 </div>
