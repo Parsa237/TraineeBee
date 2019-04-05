@@ -68,28 +68,27 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
+                            <label for="password-confirm" class="">{{ __('Confirm Password') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                         </div>
                         <!-- Captcha Test -->
-                        {{--<form onsubmit="return checkform(this);">--}}
-                            {{--<br>--}}
-                            {{--<div class="capbox">--}}
 
-                                {{--<div id="CaptchaDiv"></div>--}}
-                                {{--<div class="capbox-inner">--}}
-                                    {{--Type the above number:<br>--}}
+                            <br>
+                            <div class="capbox form-check  centerd row">
+                                <div data-unselectable="unselectable content" id="CaptchaDiv"></div>
+                                <div class="capbox-inner">
+                                    Type the above number:
+                                    <input type="hidden" id="txtCaptcha">
+                                    <input type="number"  class="col-md-4 col-form-label text-md-right" name="CaptchaInput" id="CaptchaInput" size="6"><br>
+                                    <button  class=" btn importend" onclick="test('click');">
+                                        Check ✔
+                                    </button>
+                                    <br><br>
+                                </div>
 
-                                    {{--<input type="hidden" id="txtCaptcha">--}}
-                                    {{--<input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>--}}
-
-                                {{--</div>--}}
-                            {{--</div>--}}
-                            {{--<br><br>--}}
-                        {{--</form>--}}
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" id="Submit_Button" class="btn importend" >
@@ -98,6 +97,7 @@
                                 </button>
                             </div>
                         </div>
+                            </div>
                     </form>
 
 
