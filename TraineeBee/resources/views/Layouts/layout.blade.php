@@ -113,7 +113,7 @@
 
                     <!-- Content -->
                     <h5 class="text-uppercase">TraineeBee</h5>
-                    <p>Feel free to contact us if you have any suggestions about our page:<br>Email: info@traineebee.com</p>
+                    <p>Feel free to contact us if you have any suggestions about our page:<br>Email: <a href="mailto:info@traineebee.com">info@traineebee.com</a></p>
 
                 </div>
                 <!-- Grid column -->
@@ -172,7 +172,7 @@
                             <a>2172 FK Leiden</a>
                         </li>
                         <li>
-                            <a>Email: info@traineebee.com</a>
+                            <a>Email: <a href="mailto:info@traineebee.com">info@traineebee.com</a></a>
                         </li>
                     </ul>
                 </div>
