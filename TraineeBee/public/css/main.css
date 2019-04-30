@@ -1,0 +1,148 @@
+.background {
+    /*background-image: linear-gradient(to right, #ffd154, #e3a000);*!*/
+    background-color: #f5f8fa;
+    width: 100%;
+    font-family: 'Lilita One', cursive;
+    color: #323232;
+}
+
+
+
+@keyframes stingRotate {
+    0% {
+        width: 3vw;
+        position: fixed;
+        left: 48.5vw;
+    }
+    100% {
+        position: fixed;
+        left: 90vw;
+        transform: rotate(180deg);
+        width: 3vw;
+    }
+}
+
+@keyframes stingAnimationStopBottom {
+    0% {
+
+    }
+    100% {
+        position: absolute;
+        left: 90vw;
+        width: 3vw;
+        bottom: calc(100vw - 250px);
+    }
+}
+
+@keyframes stingRotateBack {
+    0% {
+        position: fixed;
+        left: 90vw;
+        transform: rotate(180deg);
+        width: 3vw;
+    }
+    100% {
+        width: 3vw;
+        position: fixed;
+        left: 48.5vw;
+    }
+}
+
+#stingButtonImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    width: 3vw;
+    position: fixed;
+    left: 48.5vw;
+    bottom: 2vw;
+    z-index: 1;
+}
+
+.stingAnimation {
+    animation-name: stingRotate;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.stingAnimationBack {
+    animation-name: stingRotateBack;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.stingAnimationStopBottom{
+    animation-name: stingAnimationStopBottom;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.textUserName {
+    font-size: 1.6vw;
+    color: black;
+}
+
+.textUserName:hover {
+    color: black;
+}
+.HeaderFontDash{
+    color:#222426
+}
+.DashTitle{
+    font-size: 20px;
+    font-family:"Arial Black", Gadget, sans-serif;
+} 
+.DashDesc{
+    font-size: 20px;
+    font-family:"Arial Black", Gadget, sans-serif;
+    text-align: center;
+    word-break:break-word;
+} 
+.DashDesc{
+    font-size: 20px;
+    font-family:"Arial Black", Gadget, sans-serif;
+    text-align: center;
+    word-break:break-word;
+} 
+
+.grid-container {
+    display:grid;
+    grid-template-columns: 20% 80%;
+    grid-column-gap: 2.5%;
+}
+a:hover{
+    color: #FFC755;
+}
+.DashBorder{
+   border-radius: 12px;
+  border: 2px solid;
+  padding: 80%;
+    margin:2.5%;
+}
+.DashBorder2TEST{
+    border-radius: 12px;
+  border: 2px solid;
+  padding: 50%;
+    margin-right: auto;
+}
+#about {
+    margin-top: 20vw;
+}
+.footer{
+    background-color: orange;
+    width: 100%;
+}
+.footer a{
+    color: black;
+}
+.dashboarda{
+    margin-top:15%;
+    margin-left: center;
+    resize: both;
+}
+.imgsize{
+    width: 100%;
+    height: 150px;
+    border: 2px solid;
+    border-radius: 12px;
+}

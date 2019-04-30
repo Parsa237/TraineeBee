@@ -1,0 +1,87 @@
+.nav {
+    font-size: 2em;
+    width: 100%;
+}
+
+.navRow {
+    width: 100%;
+    position: relative;
+    margin-bottom: 12vw;
+    margin-left:0 !important; 
+}
+
+.firstPartNav {
+    float: right;
+    color: #323232;
+    font-size: 25px;
+    transition: 0.3s;
+    border-bottom: 3px solid #f5f8fa;
+}
+
+.secondPartNav {
+    text-align: right;
+    color: #323232;
+    font-size: 25px;
+    transition: 0.3s;
+    border-bottom: 3px solid #f5f8fa;
+    
+}
+
+.secondPartNavDashboard {
+    float: left;
+    color: #323232;
+    font-size: 25px;
+    transition: 0.3s;
+    border-bottom: 3px solid #f5f8fa;
+}
+
+.secondPartNavDashboard:hover {
+    color: #323232;
+    border-bottom: 3px solid black;
+    text-decoration: none;  
+
+}
+
+.firstPartNav:hover {
+    color: #323232;
+    text-decoration: none;
+    border-bottom: 3px solid black;
+}
+
+.secondPartNav:hover {
+    color: #323232;
+    border-bottom: 3px solid black;
+    text-decoration: none;
+
+}
+
+#logo {
+    display: block;
+    position: absolute;
+    top: 0vw;
+    left: 37vw;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    width: 26vw;
+}
+
+#logoDashboard {
+    display: block;
+    position: absolute;
+    top: 0vw;
+    left: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    width: 20vw;
+}
+
+/*#login {*/
+    /*background-color: #ffc755;*/
+    /*border: 2px solid #323232;*/
+    /*border-radius: 6px;*/
+    /*padding: 4%;*/
+/*}
+
+
